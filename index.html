@@ -369,7 +369,6 @@
             </div>
         </div>
 
-        <!-- 恢復為四項獨立條目的花果茶 -->
         <h3 class="section-title">花果茶 <span class="text-[10px] font-normal ml-2 opacity-80">每杯皆使用 2 包茶包，濃郁回甘</span></h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 mt-2 mb-8">
             <div class="menu-item-container">
@@ -471,10 +470,12 @@
         }
     }
 
-    const apiKey = "AIzaSyDEGFwm6uUFITLh1qr2r62ELtN4xFLpfyI"; 
+    // 更新為您提供的新金鑰
+    const apiKey = "AIzaSyA5b9NFquf0Xn4CZd-cMuhePA2zhfnf2fY"; 
+    
     const menuData = `
         【美式】橘海美式$80, 莊園淺焙$95, 極深焙$95, 低咖啡因$95
-        【拿鐵】橘海拿鐵$120, 燕麥奶拿鐵$130, 維也納拿鐵(鐵塔牌鮮奶油/蘭姆酒)$130, 黑糖拿鐵$140, 焦糖瑪奇朵$140, 摩卡$140, 榛果/香草$135, 煉乳$130, 椰奶$130, 日式輕拿鐵$120
+        【拿鐵】橘海拿鐵$120, 燕麥奶拿鐵$130, 維也納拿鐵(法國鐵塔牌鮮奶油/蘭姆酒)$130, 黑糖拿鐵$140, 焦糖瑪奇朵$140, 摩卡$140, 榛果/香草$135, 煉乳$130, 椰奶$130, 日式輕拿鐵$120
         【特色】白桃冰茶$160, 接骨木/蘋果氣泡飲$110, 可可厚奶$130, 銀皮茶$60
         【推薦】夏日檸檬冰咖啡$90, 西西里咖啡$130, 氣泡檸檬冰咖啡(職人手沖咖啡基底)$95
         【甜點】提拉米蘇(韓國戀人聯名)$180, 巴斯克$160, 蔓越莓乳酪歐包$210, 香草歐包$180, 咖啡吃吐奶酪$49, 焦糖爆米花$49, SoyJoy$35
@@ -482,6 +483,7 @@
     `;
 
     async function callGemini(prompt, type) {
+        // 使用最穩定的 1.5 flash 模型
         const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
         
         let systemInstruction = `
@@ -535,14 +537,14 @@
             const text = await callGemini(promptText, type);
             resDiv.innerHTML = `<strong>設計師建議：</strong><br>${text.replace(/\n/g, '<br>')}`;
         } catch (e) {
-            resDiv.innerHTML = "系統連線異常，請稍後再試處理。";
+            resDiv.innerHTML = "系統連線異常，請稍後再試。";
         }
     }
 
-    // 初始化與每分鐘自動更新
+    // 初始化與每分鐘自動更新時間狀態
     window.onload = function() {
         updateOpeningStatus();
-        setInterval(updateOpeningStatus, 60000); // 每一分鐘重新檢查一次時間
+        setInterval(updateOpeningStatus, 60000); 
     }
 </script>
 
