@@ -150,7 +150,6 @@
             opacity: 0.9;
         }
 
-        /* 智能咖啡師區塊優化 */
         .ai-section {
             background: #ffffff;
             border: 2px solid var(--chuhai-orange);
@@ -227,6 +226,8 @@
             animation: fadeIn 0.5s;
         }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .loader { border: 3px solid #f3f3f3; border-top: 3px solid var(--chuhai-orange); border-radius: 50%; width: 18px; height: 18px; animation: spin 1s linear infinite; display: inline-block; vertical-align: middle; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
 </head>
 <body>
@@ -369,7 +370,6 @@
             </div>
         </div>
 
-        <!-- 恢復為四項獨立條目的花果茶 (已刪除標題右側文字) -->
         <h3 class="section-title">花果茶</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 mt-2 mb-8">
             <div class="menu-item-container">
@@ -482,6 +482,7 @@
     `;
 
     async function callGemini(prompt, type) {
+        // 使用 1.5 flash 確保穩定性
         const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
         
         let systemInstruction = `
@@ -497,21 +498,33 @@
 
         const payload = { 
             contents: [{ parts: [{ text: prompt }] }], 
-            systemInstruction: { parts: [{ text: systemInstruction }] } 
+            // 關鍵修正：將 systemInstruction 改為 system_instruction (API 正確參數名稱)
+            system_instruction: { parts: [{ text: systemInstruction }] } 
         };
 
         const delays = [1000, 2000, 4000];
         for (let i = 0; i < delays.length; i++) {
             try {
-                const res = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
-                
-                if (res.status === 403) return "【金鑰授權錯誤】請檢查 Google Cloud 是否已正確允許您的 GitHub 網域。";
-                if (res.status === 429) throw new Error("頻率過高");
+                const res = await fetch(url, { 
+                    method: 'POST', 
+                    headers: { 'Content-Type': 'application/json' }, 
+                    body: JSON.stringify(payload),
+                    // 關鍵修正：確保瀏覽器傳遞來源資訊供 Google 驗證，解決 403 錯誤
+                    referrerPolicy: "strict-origin-when-cross-origin" 
+                });
                 
                 const data = await res.json();
-                const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-                if (text) return text;
-                throw new Error();
+                
+                if (res.status === 200) {
+                    const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                    if (text) return text;
+                    throw new Error("Empty Response");
+                }
+                
+                if (res.status === 403) return `【診斷代碼: 403】驗證失敗。原因：${data.error?.message || '權限受限'}\n請確認 Google Cloud 的「網站限制」包含 https://william805011.github.io/* (結尾需有星號)`;
+                if (res.status === 429) throw new Error("頻率過高");
+                
+                throw new Error(`Error ${res.status}`);
             } catch (e) {
                 if (i === delays.length - 1) return "味道設計師正在細心調配風味（連線延遲），請點擊下方快選標籤重試一次。";
                 await new Promise(r => setTimeout(r, delays[i]));
