@@ -20,6 +20,7 @@
             font-family: "Noto Sans TC", sans-serif;
             color: var(--chuhai-text);
             padding: 10px;
+            line-height: 1.5;
         }
         .main-container {
             max-width: 900px;
@@ -76,7 +77,6 @@
         @keyframes pulse-green { 0% { transform: scale(0.95); opacity: 0.8; } 50% { transform: scale(1.2); opacity: 1; } 100% { transform: scale(0.95); opacity: 0.8; } }
 
         .footer { background: white; padding: 3rem 1.5rem; margin-top: 2rem; border-top: 1px solid rgba(45, 90, 39, 0.1); }
-        .mascot-icon { width: 100px; position: absolute; bottom: -30px; right: 20px; opacity: 0.9; }
 
         .ai-section { background: #ffffff; border: 2px solid var(--chuhai-orange); border-radius: 30px; padding: 24px; margin-top: 40px; box-shadow: 0 10px 30px rgba(230, 126, 34, 0.1); position: relative; }
         .mood-tag { background: #fff8f1; border: 1px solid rgba(230, 126, 34, 0.2); color: var(--chuhai-text); padding: 8px 16px; border-radius: 99px; font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: all 0.2s; display: inline-block; margin-bottom: 8px; }
@@ -84,7 +84,7 @@
         .ai-input-group { display: flex; align-items: center; background: #f8f8f8; border-radius: 16px; padding: 6px; margin-top: 15px; border: 1px solid #eee; gap: 8px; overflow: hidden; }
         .ai-input { background: transparent; border: none; padding: 10px 12px; flex-grow: 1; font-size: 0.9rem; outline: none; min-width: 0; }
         .ai-go-btn { background: var(--chuhai-orange); color: white; border-radius: 12px; padding: 10px 20px; font-weight: bold; font-size: 0.9rem; flex-shrink: 0; white-space: nowrap; transition: all 0.2s; box-shadow: 0 4px 6px rgba(230, 126, 34, 0.2); }
-        #aiResponse { background: #fdf5e6; border-radius: 20px; padding: 20px; font-size: 0.9rem; line-height: 1.6; margin-top: 20px; border-left: 5px solid var(--chuhai-orange); display: none; animation: fadeIn 0.5s; }
+        #aiResponse { background: #fdf5e6; border-radius: 20px; padding: 20px; font-size: 0.9rem; line-height: 1.7; margin-top: 20px; border-left: 5px solid var(--chuhai-orange); display: none; animation: fadeIn 0.5s; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         .loader { border: 3px solid #f3f3f3; border-top: 3px solid var(--chuhai-orange); border-radius: 50%; width: 18px; height: 18px; animation: spin 1s linear infinite; display: inline-block; vertical-align: middle; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
@@ -133,48 +133,48 @@
                 </div>
 
                 <div class="menu-item-container">
-                    <div class="menu-row"><span>燕麥奶拿鐵 <span class="size-info">熱10/冷16oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">130</span></div>
-                    <p class="item-desc">使用高品質植物性燕麥奶，強調天然穀物香氣與厚實度。</p>
-                </div>
-
-                <div class="menu-item-container">
-                    <div class="menu-row"><span>維也納拿鐵 <span class="size-info">冷 10oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">130</span></div>
-                    <p class="item-desc">採用法國鐵塔牌鮮奶油與天然香草豆莢，揉合高級蘭姆酒，層次細緻優雅。</p>
-                </div>
-
-                <div class="menu-item-container">
-                    <div class="menu-row"><span>黑糖拿鐵 <span class="size-info">熱12/冷22oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">140</span></div>
-                    <p class="item-desc">濃郁黑糖風味與拿鐵融合，展現醇厚的焦糖化韻味。</p>
-                </div>
-
-                <div class="menu-item-container">
-                    <div class="menu-row"><span>焦糖瑪奇朵 <span class="size-info">熱12/冷22oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">140</span></div>
-                    <p class="item-desc">分層工法呈現，香甜焦糖淋醬與奶泡、咖啡交織的豐富層次。</p>
-                </div>
-
-                <div class="menu-item-container">
-                    <div class="menu-row"><span>摩卡拿鐵 <span class="size-info">熱12/冷22oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">140</span></div>
-                    <p class="item-desc">選用高純度可可結合濃縮咖啡，展現飽滿的苦甜質地。</p>
-                </div>
-
-                <div class="menu-item-container">
-                    <div class="menu-row"><span>榛果 / 香草拿鐵 <span class="size-info">熱10/冷16oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">135</span></div>
+                    <div class="menu-row"><span>榛果 / 香草拿鐵 <span class="size-info">熱10/冷16oz</span></span><span class="item-price">135</span></div>
                     <p class="item-desc">經典咖啡結合高品質糖露，襯托義式配方豆的奶油甜感。</p>
                 </div>
 
                 <div class="menu-item-container">
-                    <div class="menu-row"><span>煉乳拿鐵 <span class="size-info">冷熱皆 10oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">130</span></div>
+                    <div class="menu-row"><span>焦糖瑪奇朵 <span class="size-info">熱12/冷22oz</span></span><span class="item-price">140</span></div>
+                    <p class="item-desc">分層工法呈現，香甜焦糖淋醬與奶泡、咖啡交織的豐富層次。</p>
+                </div>
+
+                <div class="menu-item-container">
+                    <div class="menu-row"><span>摩卡拿鐵 <span class="size-info">熱12/冷22oz</span></span><span class="item-price">140</span></div>
+                    <p class="item-desc">選用高純度可可結合濃縮咖啡，展現飽滿的苦甜質地。</p>
+                </div>
+
+                <div class="menu-item-container">
+                    <div class="menu-row"><span>燕麥奶拿鐵 <span class="size-info">熱10/冷16oz</span></span><span class="item-price">130</span></div>
+                    <p class="item-desc">使用高品質植物性燕麥奶，強調天然穀物香氣與厚實度。</p>
+                </div>
+
+                <div class="menu-item-container">
+                    <div class="menu-row"><span>維也納拿鐵 <span class="size-info">冷 10oz</span></span><span class="item-price">130</span></div>
+                    <p class="item-desc">採用法國鐵塔牌鮮奶油與天然香草豆莢，揉合高級蘭姆酒，層次細緻優雅。</p>
+                </div>
+
+                <div class="menu-item-container">
+                    <div class="menu-row"><span>煉乳拿鐵 <span class="size-info">冷熱皆 10oz</span></span><span class="item-price">130</span></div>
                     <p class="item-desc">傳統煉乳風味與醇厚咖啡結合，呈現濃郁的乳香甜度。</p>
                 </div>
 
                 <div class="menu-item-container">
-                    <div class="menu-row"><span>椰奶拿鐵 <span class="size-info">冷 10oz 內用</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">130</span></div>
+                    <div class="menu-row"><span>椰奶拿鐵 <span class="size-info">冷 10oz 內用</span></span><span class="item-price">130</span></div>
                     <p class="item-desc">充滿海島度假感的特調，南洋椰香與咖啡意外合拍。</p>
                 </div>
 
                 <div class="menu-item-container">
-                    <div class="menu-row"><span>日式輕拿鐵 <span class="size-info">熱12/冷16oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">120</span></div>
+                    <div class="menu-row"><span>日式輕拿鐵 <span class="size-info">熱12/冷16oz</span></span><span class="item-price">120</span></div>
                     <p class="item-desc">調高咖啡萃取佔比，呈現較為輕盈且強調豆相風味的質感。</p>
+                </div>
+
+                <div class="menu-item-container">
+                    <div class="menu-row"><span>黑糖拿鐵 <span class="size-info">熱12/冷22oz</span></span><span class="item-price">140</span></div>
+                    <p class="item-desc">濃郁黑糖風味與拿鐵融合，展現醇厚的焦糖化韻味。</p>
                 </div>
             </div>
 
@@ -274,14 +274,15 @@
         </div>
     </div>
 
+    <!-- 還原三欄式頁尾 -->
     <footer class="footer">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div class="info-card">
                 <span class="card-label">Caffeine Intake / 咖啡因說明</span>
                 <div class="space-y-2 text-[11px] font-medium">
-                    <div class="flex items-center"><span class="dot-red caffeine-dot mr-3"></span> 201 毫克以上</div>
-                    <div class="flex items-center"><span class="dot-yellow caffeine-dot mr-3"></span> 101 - 200 毫克</div>
-                    <div class="flex items-center"><span class="dot-green caffeine-dot mr-3"></span> 100 毫克以下</div>
+                    <div class="flex items-center"><span class="dot-red caffeine-dot mr-3"></span> 201 毫克以上 (紅)</div>
+                    <div class="flex items-center"><span class="dot-yellow caffeine-dot mr-3"></span> 101 - 200 毫克 (黃)</div>
+                    <div class="flex items-center"><span class="dot-green caffeine-dot mr-3"></span> 100 毫克以下 (綠)</div>
                 </div>
             </div>
             <div class="info-card border-l-4 border-gray-100">
@@ -305,6 +306,7 @@
             </div>
         </div>
 
+        <!-- 1500+ 組合導購區 -->
         <div class="ai-section">
             <h3 class="text-xl font-bold text-[#2d5a27] mb-4 flex items-center">✨ 味道設計師建議</h3>
             <p class="text-xs mb-4 text-[#8a7a6a]">不確定喝什麼？點選您的心情，讓我為您設計今日風味：</p>
@@ -312,6 +314,8 @@
                 <span class="mood-tag" onclick="fastAsk('🚀 想要提神')">🚀 想要提神</span>
                 <span class="mood-tag" onclick="fastAsk('🌿 想要清爽')">🌿 想要清爽</span>
                 <span class="mood-tag" onclick="fastAsk('☁️ 想要放鬆')">☁️ 想要放鬆</span>
+                <span class="mood-tag" onclick="fastAsk('🍯 想要甜甜的')">🍯 想要甜甜的</span>
+                <span class="mood-tag" onclick="fastAsk('🍵 想要熱飲/溫潤')">🍵 熱飲/溫潤</span>
                 <span class="mood-tag" onclick="askAI('fortune')" style="background:#2d5a27; color:white; border:none;">🔮 咖啡占卜</span>
             </div>
             <div class="ai-input-group">
@@ -343,22 +347,65 @@
         }
     }
 
+    // 您提供的正式 API 金鑰
     const apiKey = "AIzaSyAI6bSbMnagSVvo6OeSS4BMMMt1uSJOnd8"; 
-    const menuData = "【美式】橘海$80,莊園淺焙$95,極深焙$95,低咖啡因$95; 【拿鐵】橘海拿鐵$120,燕麥奶$130,維也納$130,黑糖$140,瑪奇朵$140,摩卡$140,榛果香草$135,煉乳$130,椰奶$130,日式輕拿鐵$120; 【特色】可可厚奶$130,銀皮茶$60,白桃冰茶$160,氣泡飲$110; 【推薦】夏日檸檬$90,西西里$130,氣泡檸檬冰$95; 【甜點】提拉米蘇$200,巴斯克$160,歐包$210/180,奶酪$49,焦糖爆米花$49,SoyJoy$35; 【花果茶】元氣勁茶/瑪黛牛蒡$130,黑醋栗/芙香蘋果$140";
+    const menuData = "【美式】橘海$80,莊園淺焙$95,極深焙$95,低咖啡因$95; 【拿鐵】橘海拿鐵$120,榛果/香草$135,焦糖瑪奇朵$140,摩卡$140,燕麥奶$130,維也納$130,煉乳$130,椰奶$130,日式輕拿鐵$120,黑糖$140; 【特色】可可厚奶$130,銀皮茶$60,白桃冰茶$160,氣泡飲$110; 【推薦】夏日檸檬$90,西西里$130,氣泡檸檬冰$95; 【甜點】提拉米蘇$200,巴斯克$160,歐式麵包$210/180,奶酪$49,爆米花$49,SoyJoy$35; 【花果茶】元氣勁茶/瑪黛牛蒡$130,黑醋栗/芙香蘋果$140";
 
-    const localFallbacks = [
-        "味道是生活唯一的設計稿。建議來杯：橘海拿鐵 ($120)。",
-        "淺焙的美式，是清晨第一縷微光。建議來杯：莊園淺焙美式 ($95)。",
-        "如果感到忙碌，維也納拿鐵的鮮奶油是您的避風港。建議來杯：維也納拿鐵 ($130)。",
-        "職人語錄：味道不只是味覺，是記憶。建議：巴斯克乳酪蛋糕 ($160)。",
-        "當下的心情適合像大海一樣寬廣而平靜的味道。推薦：橘海美式 ($80)。"
-    ];
+    const engine = {
+        openings: [
+            "這是一個適合沉澱的時刻。", "歡迎來到橘海，讓味覺帶您出走。", "設計一段生活的空白，就從這杯開始。", "每一滴萃取，都是我們對美好的堅持。", 
+            "味道是生活唯一的設計稿，而您是最後的審閱者。", "窗外的光影正好，正適合一杯專屬您的設計風味。", "在這個角落，時間的流速由您決定。", 
+            "每一顆咖啡豆，都承載著一段關於陽光的故事。", "讓香氣成為導引，帶您尋找內心的寧靜。", "歡迎來到橘海的味道設計室。"
+        ],
+        moodAnalysis: {
+            refresh: ["感到疲憊了嗎？讓強烈的咖啡因顆粒為您重啟系統。", "現在的您，需要一點震撼來喚醒沈睡的靈魂。", "腦袋值得一次優雅的重對焦，讓深邃的韻味帶路。", "拋開瑣事吧，這份醇厚是為了下一場衝刺準備的。", "讓苦甜適中的層次，洗去思緒中的雜訊。", "味道設計師建議：此刻不需要太多思考，只需一口醇厚。"],
+            breeze: ["外頭的悶熱與心中的繁雜，就交給輕盈的層次來化解。", "想要像微風拂過橘色海面一樣的清爽觸感嗎？", "沈重的感官，需要一點明亮的果酸與氣泡來救贖。", "讓酸甜與冰涼交織成一段夏日的留白。", "這份清爽，是為了在喧囂中開闢一方淨土。", "當下的溫度，最適合用果香來溫柔中和。"],
+            relax: ["請卸下重擔，這裡的節奏由您自己設計。", "偶爾放慢步調，是為了品嚐生活中微小而豐富的風味細節。", "讓思緒像奶泡一樣升起，再隨著咖啡的溫潤慢慢消散。", "如果您在尋找一片靜謐，這杯就是您的座標。", "生活需要留白，而我們負責為這片白填上香氣。", "讓感官在醇厚與清透間游移，找回最舒適的自己。"],
+            sweet: ["生活雖然有時帶點苦，但糖分是我們設計出的最佳解藥。", "給辛苦了一整天的自己，一份最甜蜜而溫柔的獎勵。", "濃郁的乳香與糖露，最能修補微受損的情緒，讓心軟化下來。", "讓這份甜美包裹住疲倦，成為今日最溫暖的句點。", "糖分不僅是能量，更是設計師獻給您的味覺擁抱。", "此刻的您，值得被最高級的濃郁感寵溺。"],
+            warm: ["一杯溫潤的熱飲，是我們給您最隱形的擁抱。", "讓香氣在喉間回甘，像冬日裡的微光一樣暖進心窩。", "微涼的天氣，最適合用豐沛的乳香來填補感官的空虛。", "閉上眼，讓這份溫暖重新設計您的身心平衡。", "熱度是風味的載體，帶領您通往平靜的彼岸。", "溫潤的口感，是我們對您最無聲的問候。"],
+            fortune: ["【今日占卜：靈感湧現】水星能量帶來極佳創意，建議大膽嘗試。", "【今日占卜：平靜如水】適合放慢腳步專注當下，答案就在寂靜中。", "【今日占卜：溫暖相遇】今天會有美好的交流，準備好您的微笑。", "【今日占卜：撥雲見日】前陣子的困惑將迎刃而解，直覺是您的嚮導。", "【今日占卜：收穫滿滿】長期努力的事項即將開花結果。", "【今日占卜：優雅轉身】捨棄不適合的執著，新機會就在轉角。"]
+        },
+        productRecs: {
+            refresh: ["極深焙美式 ($95)", "橘海美式 ($80)", "元氣勁茶 ($130)"],
+            breeze: ["夏日檸檬冰咖啡 ($90)", "西西里咖啡 ($130)", "氣泡檸檬冰咖啡 ($95)", "接骨木氣泡飲 ($110)"],
+            relax: ["燕麥奶拿鐵 ($130)", "莊園淺焙美式 ($95)", "銀皮茶 ($60)"],
+            sweet: ["榛果/香草拿鐵 ($135)", "黑糖拿鐵 ($140)", "提拉米蘇 ($200)"],
+            warm: ["橘海拿鐵 ($120)", "煉乳拿鐵 ($130)", "瑪黛牛蒡茶 ($130)"]
+        },
+        upsells: [
+            "💡 強烈建議搭配『巴斯克乳酪蛋糕 ($160)』，微焦的表皮與咖啡香是絕配。",
+            "💡 若想增加點層次，『焦糖爆米花 ($49)』是這份風味的最佳良伴。",
+            "💡 別錯過聯名限定的『提拉米蘇 ($200)』，能讓整體體驗更臻完美。",
+            "💡 如果您偏好濃厚乳香，我們的『可可厚奶 ($130)』與咖啡系列同樣迷人。",
+            "💡 現在正適合來份點心，讓這段設計時光更完整而有質感。",
+            "💡 建議搭配『蔓越莓乳酪歐包 ($210)』，微酸甜的內餡更能襯托豆香。",
+            "💡 職人建議：一口甜食，一口美式，這是最平衡的味覺設計。",
+            "💡 您知道嗎？『SoyJoy 棒 ($35)』的豆香與拿鐵意外地合拍。"
+        ]
+    };
+
+    function generateMarketingScript(moodText, type) {
+        let category = "relax";
+        if (moodText.includes("提神")) category = "refresh";
+        else if (moodText.includes("清爽")) category = "breeze";
+        else if (moodText.includes("甜甜")) category = "sweet";
+        else if (moodText.includes("熱飲") || moodText.includes("溫潤")) category = "warm";
+        
+        const open = engine.openings[Math.floor(Math.random() * engine.openings.length)];
+        const analysisList = (type === 'fortune') ? engine.moodAnalysis.fortune : engine.moodAnalysis[category];
+        const analysis = analysisList[Math.floor(Math.random() * analysisList.length)];
+        
+        const prod = engine.productRecs[category][Math.floor(Math.random() * engine.productRecs[category].length)];
+        const upsell = engine.upsells[Math.floor(Math.random() * engine.upsells.length)];
+
+        return `${open}<br><br>${analysis}<br>我為您設計的今日風味：<strong>${prod}</strong>。<br><br>${upsell}`;
+    }
 
     async function callGemini(prompt, type) {
         const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`;
-        let sysPrompt = `您是『橘海 CHUHAI』味道設計師。說話溫馨。僅限推薦菜單品項與報價。資料：${menuData}`;
-        if (type === 'fortune') sysPrompt = "您是橘海咖啡占卜師，提供正能量占卜，最後推薦一款菜單品項與價格。";
-
+        let sysPrompt = `您是『橘海』味道設計師。說話溫馨充滿職人詩意。1.僅限推薦菜單品項與報價。2.務必主動建議搭配點心以優化銷售。資料：${menuData}`;
+        if (type === 'fortune') sysPrompt = "您是咖啡占卜師，提供暖心占卜並推薦菜單品項與甜點搭配。";
+        
         const payload = { 
             contents: [{ parts: [{ text: prompt }] }], 
             system_instruction: { parts: [{ text: sysPrompt }] } 
@@ -366,20 +413,14 @@
 
         try {
             const res = await fetch(url, { 
-                method: 'POST', 
-                headers: { 'Content-Type': 'application/json' }, 
-                body: JSON.stringify(payload),
+                method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload),
                 referrerPolicy: "strict-origin-when-cross-origin" 
             });
-
             const data = await res.json();
-            if (res.status === 200) {
-                return data.candidates?.[0]?.content?.parts?.[0]?.text;
-            } else {
-                throw new Error("API Connection Failed");
-            }
+            if (res.status === 200) return data.candidates?.[0]?.content?.parts?.[0]?.text;
+            throw new Error();
         } catch (e) {
-            return `【設計師手稿】${localFallbacks[Math.floor(Math.random() * localFallbacks.length)]}`;
+            return `【設計師手稿】${generateMarketingScript(prompt, type)}`;
         }
     }
 
