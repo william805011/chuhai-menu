@@ -127,15 +127,15 @@
             animation: hideWelcome 0.8s ease-in-out 2.5s forwards;
         }
         .welcome-mascot {
-            width: 250px;
-            max-width: 50vw;
+            width: 380px;
+            max-width: 80vw;
             opacity: 0;
             mix-blend-mode: multiply;
-            animation: mascotReveal 1.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+            animation: mascotReveal 1.2s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
         }
         @keyframes mascotReveal {
-            0% { opacity: 0; transform: translateY(20px) scale(0.4); }
-            100% { opacity: 1; transform: translateY(0) scale(1); }
+            0% { opacity: 0; transform: translateY(80px) scale(0.1) rotate(-10deg); }
+            100% { opacity: 1; transform: translateY(0) scale(1) rotate(0deg); }
         }
         @keyframes hideWelcome {
             0% { opacity: 1; visibility: visible; }
@@ -410,12 +410,13 @@
         </div>
         <p class="text-center text-[9px] opacity-40 mt-8 tracking-[0.3em] uppercase font-bold text-[#2d5a27]">© 2026 CHUHAI COFFEE ROASTERS. All Rights Reserved.</p>
     </footer>
+</div> <!-- 將 main-container 的結束標籤移到這裡，讓彈窗脫離容器限制 -->
 
-    <!-- 營養資訊彈窗 (Glassmorphism Modal) -->
-    <div id="nutriModal" class="nutrition-modal" onclick="toggleNutritionModal()">
-        <div class="nutrition-content" onclick="event.stopPropagation()">
-            <button class="absolute top-4 right-4 text-gray-400 hover:text-red-500 font-bold text-lg" onclick="toggleNutritionModal()">✕</button>
-            <h2 id="nutri-title" class="text-xl font-bold text-[#2d5a27] mb-6 text-center border-b-2 border-[#e67e22] pb-2 inline-block">品項糖總量與熱量表</h2>
+<!-- 營養資訊彈窗 (Glassmorphism Modal) -->
+<div id="nutriModal" class="nutrition-modal" onclick="toggleNutritionModal()">
+    <div class="nutrition-content" onclick="event.stopPropagation()">
+        <button class="absolute top-4 right-4 text-gray-400 hover:text-red-500 font-bold text-lg" onclick="toggleNutritionModal()">✕</button>
+        <h2 id="nutri-title" class="text-xl font-bold text-[#2d5a27] mb-6 text-center border-b-2 border-[#e67e22] pb-2 inline-block">品項糖總量與熱量表</h2>
             <div class="overflow-x-auto">
                 <table class="nutrition-table">
                     <thead>
@@ -449,7 +450,7 @@
             </div>
         </div>
     </div>
-</div>
+<!-- 注意：原本在這裡的 </div> 已經移到上面了 -->
 
 <!-- 吉祥物互動區 (Fixed Bottom Right) -->
 <div class="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-[60] cursor-pointer group" onclick="scrollToAI()">
