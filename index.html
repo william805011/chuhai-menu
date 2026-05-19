@@ -2,13 +2,13 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>橘海 CHUHAI - Official Menu</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         :root { --chuhai-green: #2d5a27; --chuhai-orange: #e67e22; --chuhai-cream: #fdf5e6; --chuhai-text: #4a3728; --status-green: #2ecc71; --status-gray: #bdc3c7; }
-        body { background-color: var(--chuhai-cream); font-family: "Noto Sans TC", sans-serif; color: var(--chuhai-text); padding: 10px; line-height: 1.5; }
+        body { background-color: var(--chuhai-cream); font-family: "Noto Sans TC", sans-serif; color: var(--chuhai-text); padding: 10px; line-height: 1.5; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
         .main-container { max-width: 900px; margin: 0 auto; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(45, 90, 39, 0.1); border-radius: 30px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative; }
         
         .watermark-bg { position: absolute; inset: 0; opacity: 0.03; pointer-events: none; background-image: url('./logo-mark-cream.png'); background-position: center; background-repeat: no-repeat; background-size: 70%; background-attachment: fixed; z-index: 0; }
@@ -31,7 +31,7 @@
         .item-desc { font-size: 0.75rem; color: #6b5a4a; margin-top: 4px; line-height: 1.4; letter-spacing: 0.05rem; }
         .item-price { font-weight: 700; color: var(--chuhai-green); font-size: 1.1rem; }
         .size-info { font-size: 0.7rem; color: #8a7a6a; margin-left: 6px; }
-        .caffeine-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-left: 6px; vertical-align: middle; }
+        .caffeine-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; margin-left: 6px; vertical-align: middle; }
         .dot-red { background-color: #ff8a8a; } .dot-yellow { background-color: #f7d06a; } .dot-green { background-color: #8db58e; }
         
         .info-card { background: rgba(255,255,255,0.8); border-radius: 16px; padding: 1.25rem; border: 1px solid rgba(45,90,39,0.1); box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
@@ -122,11 +122,11 @@
                 <h3 class="section-title" id="t-lat">拿鐵系列</h3>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-l1">橘海拿鐵咖啡 <span class="size-info">熱 12oz / 冷 22oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">120</span></div><p class="item-desc" id="d-l1">濃縮咖啡與微孔奶泡的精確融合，質地細緻圓潤。</p></div>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-l2">榛果 / 香草拿鐵 <span class="size-info">熱 10oz / 冷 16oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">135</span></div><p class="item-desc" id="d-l2">經典咖啡結合高品質糖露，襯托義式配方豆的奶油甜感。</p></div>
-                <div class="menu-item-container"><div class="menu-row"><span id="n-l3">焦糖瑪奇朵 <span class="size-info">熱 12oz / 冷 22oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">140</span></div><p class="item-desc" id="d-l3">分層工法呈現，香甜焦糖淋醬與奶泡、咖啡交織的豐富層次。</p></div>
-                <div class="menu-item-container"><div class="menu-row"><span id="n-l4">摩卡拿鐵 <span class="size-info">熱 12oz / 冷 22oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">140</span></div><p class="item-desc" id="d-l4">選用高純度可可結合濃縮咖啡，展現飽滿的苦甜質地。</p></div>
+                <div class="menu-item-container"><div class="menu-row"><span id="n-l3">焦糖瑪奇朵 <span class="size-info">熱 10oz / 冷 16oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">140</span></div><p class="item-desc" id="d-l3">分層工法呈現，香甜焦糖淋醬與奶泡、咖啡交織的豐富層次。</p></div>
+                <div class="menu-item-container"><div class="menu-row"><span id="n-l4">摩卡拿鐵 <span class="size-info">熱 10oz / 冷 16oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">140</span></div><p class="item-desc" id="d-l4">選用高純度可可結合濃縮咖啡，展現飽滿的苦甜質地。</p></div>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-l5">燕麥奶拿鐵 <span class="size-info">熱 10oz / 冷 16oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-l5">使用高品質植物性燕麥奶，強調天然穀物香氣與厚實度。</p></div>
-                <div class="menu-item-container"><div class="menu-row"><span id="n-l6">維也納拿鐵 <span class="size-info">冷 10oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-l6">採用法國鐵塔牌鮮奶油與天然香草豆莢，揉合高級蘭姆酒，層次細緻優雅。</p></div>
-                <div class="menu-item-container"><div class="menu-row"><span id="n-l7">煉乳拿鐵 <span class="size-info">熱 10oz / 冷 12oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-l7">傳統煉乳風味與醇厚咖啡結合，呈現濃郁的乳香甜度。</p></div>
+                <div class="menu-item-container"><div class="menu-row"><span id="n-l6">維也納拿鐵 <span class="size-info">冷 16oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-l6">採用法國鐵塔牌鮮奶油與天然香草豆莢，揉合高級蘭姆酒，層次細緻優雅。</p></div>
+                <div class="menu-item-container"><div class="menu-row"><span id="n-l7">煉乳拿鐵 <span class="size-info">熱 10oz / 冷 16oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-l7">傳統煉乳風味與醇厚咖啡結合，呈現濃郁的乳香甜度。</p></div>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-l8">椰奶拿鐵 <span class="size-info">冷 6oz 內用</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-l8">充滿海島度假感的特調，南洋椰香與咖啡意外合拍。</p></div>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-l9">日式輕拿鐵 <span class="size-info">熱 12oz / 冷 16oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">120</span></div><p class="item-desc" id="d-l9">選用巴西豆，純粹鮮奶加入咖啡呈現麥芽奶茶般香甜。</p></div>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-l10">黑糖拿鐵 <span class="size-info">熱 12oz / 冷 16oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">140</span></div><p class="item-desc" id="d-l10">濃郁黑糖風味與拿鐵融合，展現醇厚的焦糖化韻味。</p></div>
@@ -134,13 +134,13 @@
 
             <div>
                 <h3 class="section-title" id="t-spe">特色飲品</h3>
-                <div class="menu-item-container"><div class="menu-row"><span id="n-s1">可可厚奶 <span class="size-info">16oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-s1">高飽和度可可與鮮乳融合，風味厚實且無咖啡因負擔。</p></div>
-                <div class="menu-item-container"><div class="menu-row"><span id="n-s2">銀皮茶 <span class="size-info">16oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">60</span></div><p class="item-desc" id="d-s2">咖啡烘焙脫落薄膜萃取，富含抗氧化成分，口感清爽。</p></div>
-                <div class="menu-item-container"><div class="menu-row"><span id="n-s3">白桃冰茶 <span class="size-info">22oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">160</span></div><p class="item-desc" id="d-s3">精選白桃果露與茶葉浸漬，具備細膩酸甜層次。</p></div>
+                <div class="menu-item-container"><div class="menu-row"><span id="n-s1">可可厚奶 <span class="size-info">熱 16oz / 冷 16oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-s1">高飽和度可可與鮮乳融合，風味厚實且無咖啡因負擔。</p></div>
+                <div class="menu-item-container"><div class="menu-row"><span id="n-s2">銀皮茶 <span class="size-info">熱 16oz / 冷 16oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">60</span></div><p class="item-desc" id="d-s2">咖啡烘焙脫落薄膜萃取，富含抗氧化成分，口感清爽。</p></div>
+                <div class="menu-item-container"><div class="menu-row"><span id="n-s3">白桃冰茶 <span class="size-info">冷 20oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">160</span></div><p class="item-desc" id="d-s3">精選白桃果露與茶葉浸漬，具備細膩酸甜層次。</p></div>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-s4">接骨木 / 蘋果氣泡飲 <span class="size-info">冷 16oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">110</span></div><p class="item-desc" id="d-s4">天然果香結合細緻氣泡水，呈現純淨清爽風味。</p></div>
 
                 <h3 class="section-title" id="t-roa">烘豆師推薦</h3>
-                <div class="menu-item-container"><div class="menu-row"><span id="n-r1">夏日檸檬冰咖啡 <span class="size-info">12oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">90</span></div><p class="item-desc" id="d-r1">新鮮檸檬片與淺焙咖啡結合，口感清爽如檸檬茶。</p></div>
+                <div class="menu-item-container"><div class="menu-row"><span id="n-r1">夏日檸檬冰咖啡 <span class="size-info">冷 16oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">90</span></div><p class="item-desc" id="d-r1">新鮮檸檬片與淺焙咖啡結合，口感清爽如檸檬茶。</p></div>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-r2">西西里咖啡 <span class="size-info">冷 22oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-r2">咖啡、檸檬與糖的究極比例，展現豐沛氣泡與多層次的甜。</p></div>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-r3">氣泡檸檬冰咖啡 <span class="size-info">冷 22oz</span> <span class="dot-yellow caffeine-dot"></span></span><span class="item-price">95</span></div><p class="item-desc" id="d-r3">精選濃縮咖啡加上檸檬氣泡飲，完美融合。</p></div>
 
@@ -149,17 +149,17 @@
                 <div class="menu-item-container"><div class="menu-row"><span id="n-d2">巴斯克乳酪蛋糕</span><span class="item-price">160</span></div><p class="item-desc" id="d-d2">高溫烘烤焦糖表層，內部維持濕潤半熟質地。</p></div>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-d3">蔓越莓乳酪歐式麵包 <span class="size-info">附油醋醬</span></span><span class="item-price">210</span></div><p class="item-desc" id="d-d3">採低溫發酵歐包，內含優質蔓越莓與濃郁乳酪。</p></div>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-d4">香草歐式麵包 <span class="size-info">附油醋醬</span></span><span class="item-price">180</span></div><p class="item-desc" id="d-d4">天然香料製作，口感厚實且具小麥純香。</p></div>
-                <div class="menu-item-container"><div class="menu-row"><span id="n-d5">咖啡吃吐奶酪</span><span class="item-price">49</span></div><p class="item-desc" id="d-d5">自家烘焙日式濃縮咖啡為基底，質地滑順且具備咖啡乳香。</p></div>
+                <div class="menu-item-container"><div class="menu-row"><span id="n-d5">咖啡吃土奶酪</span><span class="item-price">49</span></div><p class="item-desc" id="d-d5">自家烘焙日式濃縮咖啡為基底，質地滑順且具備咖啡乳香。</p></div>
                 <div class="menu-item-container"><div class="menu-row"><span id="n-d6">焦糖爆米花 / SoyJoy 棒</span><span class="item-price">49 / 35</span></div><p class="item-desc" id="d-d6">酥脆焦糖與營養大豆，點心輕食首選。</p></div>
             </div>
         </div>
 
-        <h3 class="section-title" id="t-tea">花果茶</h3>
+        <h3 class="section-title" id="t-tea">花果茶</h3><span class="text-[11px] font-medium text-[#8a7a6a] tracking-widest ml-3" id="t-tea-note">熱飲可回沖</span>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 mt-2 mb-8">
-            <div class="menu-item-container"><div class="menu-row"><span id="n-t1">元氣勁茶 <span class="dot-green caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-t1">精選天然草本成分，強調提神且平衡身心之功能性飲品。</p></div>
-            <div class="menu-item-container"><div class="menu-row"><span id="n-t2">瑪黛牛蒡茶 <span class="dot-green caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-t2">融合瑪黛葉與牛蒡根，口感溫潤清新，具備極佳風味層次。</p></div>
-            <div class="menu-item-container"><div class="menu-row"><span id="n-t3">黑醋栗果茶 <span class="dot-green caffeine-dot"></span></span><span class="item-price">140</span></div><p class="item-desc" id="d-t3">選用高品質黑醋栗果乾，展現明亮果酸與豐富維生素質感。</p></div>
-            <div class="menu-item-container"><div class="menu-row"><span id="n-t4">芙香蘋果果茶 <span class="dot-green caffeine-dot"></span></span><span class="item-price">140</span></div><p class="item-desc" id="d-t4">以天然蘋果乾為基底，呈現清新飽滿的果實甜香。</p></div>
+            <div class="menu-item-container"><div class="menu-row"><span id="n-t1">元氣勁茶 <span class="size-info">熱 16oz / 冷 16oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-t1">精選天然草本成分，強調提神且平衡身心之功能性飲品。</p></div>
+            <div class="menu-item-container"><div class="menu-row"><span id="n-t2">瑪黛牛蒡茶 <span class="size-info">熱 16oz / 冷 16oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">130</span></div><p class="item-desc" id="d-t2">融合瑪黛葉與牛蒡根，口感溫潤清新，具備極佳風味層次。</p></div>
+            <div class="menu-item-container"><div class="menu-row"><span id="n-t3">黑醋栗果茶 <span class="size-info">熱 16oz / 冷 16oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">140</span></div><p class="item-desc" id="d-t3">選用高品質黑醋栗果乾，展現明亮果酸與豐富維生素質感。</p></div>
+            <div class="menu-item-container"><div class="menu-row"><span id="n-t4">芙香蘋果果茶 <span class="size-info">熱 16oz / 冷 16oz</span> <span class="dot-green caffeine-dot"></span></span><span class="item-price">140</span></div><p class="item-desc" id="d-t4">以天然蘋果乾為基底，呈現清新飽滿的果實甜香。</p></div>
         </div>
     </div>
 
@@ -253,7 +253,7 @@
                 <div class="text-[#e67e22] text-4xl font-bold mb-2" id="g-txt-score-final">0</div>
                 <div id="g-txt-rank" class="text-[#2d5a27] text-xs font-bold mb-2 text-center bg-[#fdf5e6] px-4 py-1.5 rounded-xl border border-[#e67e22]/30 shadow-sm leading-relaxed"></div>
                 <div class="text-[12px] text-[#8a7a6a] font-medium text-center px-4 mb-4 leading-relaxed" id="g-txt-msg"></div>
-                <button onclick="startGame()" class="bg-[#e67e22] text-white px-6 py-2.5 rounded-full font-bold shadow-lg hover:bg-[#d67118] transition-all transform hover:scale-105 tracking-widest" id="g-btn-again">再玩一次</button>
+                <button onclick="playAgain()" class="bg-[#e67e22] text-white px-6 py-2.5 rounded-full font-bold shadow-lg hover:bg-[#d67118] transition-all transform hover:scale-105 tracking-widest" id="g-btn-again">再玩一次</button>
             </div>
             <div class="absolute top-3 left-4 font-bold text-[#2d5a27] text-sm z-10" id="game-score-display">分數: 0</div>
             <div class="absolute top-3 right-4 font-bold text-[#e67e22] text-sm z-10" id="game-time-display">30s</div>
@@ -276,9 +276,9 @@
 
 <script>
     // --- 效能優化：封裝取得元素的輔助函式 ---
-    const el = id => document.getElementById(id);
+    const domCache = {};
+    const el = id => domCache[id] || (domCache[id] = document.getElementById(id));
 
-    const itemImageNames = {}; 
     const nutritionFacts = {
         "a1":{cal:1,sugar:0,caf:'green'}, "a2":{cal:1,sugar:0,caf:'yellow'}, "a3":{cal:1,sugar:0,caf:'red'}, "a4":{cal:1,sugar:0,caf:'green'},
         "l1":{cal:189,sugar:0,caf:'yellow'}, "l2":{cal:195,sugar:25.8,caf:'yellow'}, "l3":{cal:249,sugar:20,caf:'yellow'}, "l4":{cal:343,sugar:13,caf:'yellow'}, "l5":{cal:124,sugar:0.6,caf:'yellow'}, "l6":{cal:168,sugar:9.1,caf:'yellow'}, "l7":{cal:215,sugar:12,caf:'yellow'}, "l8":{cal:154.8,sugar:9.4,caf:'yellow'}, "l9":{cal:237,sugar:12,caf:'yellow'}, "l10":{cal:262,sugar:25,caf:'yellow'},
@@ -291,66 +291,39 @@
     const i18n = {
         zh: {
             langName: "繁體中文", mascot: "今天想喝點什麼？ ☕", header: { slogan: "你生活的味道設計師" },
-            titles: { ame: "美式咖啡", lat: "拿鐵系列", spe: "特色飲品", roa: "烘豆師推薦", des: "輕食丨甜點", tea: "花果茶" },
-            items: { "a1": "莊園淺焙丨美式咖啡", "a2": "橘海丨美式咖啡", "a3": "日式烘焙法丨極深焙咖啡", "a4": "低咖啡因丨美式咖啡", "l1": "橘海拿鐵咖啡 <span class='size-info'>熱 12oz / 冷 22oz</span>", "l2": "榛果 / 香草拿鐵 <span class='size-info'>熱 10oz / 冷 16oz</span>", "l3": "焦糖瑪奇朵 <span class='size-info'>熱 12oz / 冷 22oz</span>", "l4": "摩卡拿鐵 <span class='size-info'>熱 12oz / 冷 22oz</span>", "l5": "燕麥奶拿鐵 <span class='size-info'>熱 10oz / 冷 16oz</span>", "l6": "維也納拿鐵 <span class='size-info'>冷 10oz</span>", "l7": "煉乳拿鐵 <span class='size-info'>熱 10oz / 冷 12oz</span>", "l8": "椰奶拿鐵 <span class='size-info'>冷 6oz 內用</span>", "l9": "日式輕拿鐵 <span class='size-info'>熱 12oz / 冷 16oz</span>", "l10": "黑糖拿鐵 <span class='size-info'>熱 12oz / 冷 16oz</span>", "s1": "可可厚奶 <span class='size-info'>16oz</span>", "s2": "銀皮茶 <span class='size-info'>16oz</span>", "s3": "白桃冰茶 <span class='size-info'>22oz</span>", "s4": "接骨木 / 蘋果氣泡飲 <span class='size-info'>冷 16oz</span>", "r1": "夏日檸檬冰咖啡 <span class='size-info'>12oz</span>", "r2": "西西里咖啡 <span class='size-info'>冷 22oz</span>", "r3": "氣泡檸檬冰咖啡 <span class='size-info'>冷 22oz</span>", "t1": "元氣勁茶", "t2": "瑪黛牛蒡茶", "t3": "黑醋栗果茶", "t4": "芙香蘋果果茶", "d1": "提拉米蘇 <span class='size-info'>韓國戀人聯名</span>", "d2": "巴斯克乳酪蛋糕", "d3": "蔓越莓乳酪歐式麵包 <span class='size-info'>附油醋醬</span>", "d4": "香草歐式麵包 <span class='size-info'>附油醋醬</span>", "d5": "咖啡吃吐奶酪", "d6": "焦糖爆米花 / SoyJoy 棒" },
-            descs: { "a1": "嚴選單一產區豆款，展現明亮酸值與輕盈花果香調。", "a2": "品牌特調中深焙，具備穩定的堅果可可基調與平衡口感。", "a3": "採用低溫慢焙技術，萃取濃郁且低酸度的厚實煙燻韻味。", "a4": "專業處理技術去除咖啡因，保留咖啡原始醇厚香氣。", "l1": "濃縮咖啡與微孔奶泡的精確融合，質地細緻圓潤。", "l2": "經典咖啡結合高品質糖露，襯托義式配方豆的奶油甜感。", "l3": "分層工法呈現，香甜焦糖淋醬與奶泡、咖啡交織的豐富層次。", "l4": "選用高純度可可結合濃縮咖啡，展現飽滿的苦甜質地。", "l5": "使用高品質植物性燕麥奶，強調天然穀物香氣與厚實度。", "l6": "採用法國鐵塔牌鮮奶油與天然香草豆莢，揉合高級蘭姆酒，層次細緻優雅。", "l7": "傳統煉乳風味與醇厚咖啡結合，呈現濃郁的乳香甜度。", "l8": "充滿海島度假感的特調，南洋椰香與咖啡意外合拍。", "l9": "選用巴西豆，純粹鮮奶加入咖啡呈現麥芽奶茶般香甜。", "l10": "濃郁黑糖風味與拿鐵融合，展現醇厚的焦糖化韻味。", "s1": "高飽和度可可與鮮乳融合，風味厚實且無咖啡因負擔。", "s2": "咖啡烘焙脫落薄膜萃取，富含抗氧化成分，口感清爽。", "s3": "精選白桃果露與茶葉浸漬，具備細膩酸甜層次。", "s4": "天然果香結合細緻氣泡水，呈現純淨清爽風味。", "r1": "新鮮檸檬片與淺焙咖啡結合，口感清爽如檸檬茶。", "r2": "咖啡、檸檬與糖的究極比例，展現豐沛氣泡與多層次的甜。", "r3": "精選濃縮咖啡加上檸檬氣泡飲，完美融合。", "t1": "精選天然草本成分，強調提神且平衡身心之功能性飲品。", "t2": "融合瑪黛葉與牛蒡根，口感溫潤清新，具備極佳風味層次。", "t3": "選用高品質黑醋栗果乾，展現明亮果酸與豐富維生素質感。", "t4": "以天然蘋果乾為基底，呈現清新飽滿的果實甜香。", "d1": "韓國戀人限定，馬斯卡彭與濃縮咖啡的極致融合。", "d2": "高溫烘烤焦糖表層，內部維持濕潤半熟質地。", "d3": "採低溫發酵歐包，內含優質蔓越莓與濃郁乳酪。", "d4": "天然香料製作，口感厚實且具小麥純香。", "d5": "自家烘焙日式濃縮咖啡為基底，質地滑順且具備咖啡乳香。", "d6": "酥脆焦糖與營養大豆，點心輕食首選。" },
+            titles: { ame: "美式咖啡", lat: "拿鐵系列", spe: "特色飲品", roa: "烘豆師推薦", des: "輕食丨甜點", tea: "花果茶", teaNote: "熱飲可回沖" },
+            items: { "a1": "莊園淺焙丨美式咖啡", "a2": "橘海丨美式咖啡", "a3": "日式烘焙法丨極深焙咖啡", "a4": "低咖啡因丨美式咖啡", "l1": "橘海拿鐵咖啡 <span class='size-info'>熱 12oz / 冷 22oz</span>", "l2": "榛果 / 香草拿鐵 <span class='size-info'>熱 10oz / 冷 16oz</span>", "l3": "焦糖瑪奇朵 <span class='size-info'>熱 10oz / 冷 16oz</span>", "l4": "摩卡拿鐵 <span class='size-info'>熱 10oz / 冷 16oz</span>", "l5": "燕麥奶拿鐵 <span class='size-info'>熱 10oz / 冷 16oz</span>", "l6": "維也納拿鐵 <span class='size-info'>冷 16oz</span>", "l7": "煉乳拿鐵 <span class='size-info'>熱 10oz / 冷 16oz</span>", "l8": "椰奶拿鐵 <span class='size-info'>冷 6oz 內用</span>", "l9": "日式輕拿鐵 <span class='size-info'>熱 12oz / 冷 16oz</span>", "l10": "黑糖拿鐵 <span class='size-info'>熱 12oz / 冷 16oz</span>", "s1": "可可厚奶 <span class='size-info'>熱 16oz / 冷 16oz</span>", "s2": "銀皮茶 <span class='size-info'>熱 16oz / 冷 16oz</span>", "s3": "白桃冰茶 <span class='size-info'>冷 20oz</span>", "s4": "接骨木 / 蘋果氣泡飲 <span class='size-info'>冷 16oz</span>", "r1": "夏日檸檬冰咖啡 <span class='size-info'>冷 16oz</span>", "r2": "西西里咖啡 <span class='size-info'>冷 22oz</span>", "r3": "氣泡檸檬冰咖啡 <span class='size-info'>冷 22oz</span>", "t1": "元氣勁茶 <span class='size-info'>熱 16oz / 冷 16oz</span>", "t2": "瑪黛牛蒡茶 <span class='size-info'>熱 16oz / 冷 16oz</span>", "t3": "黑醋栗果茶 <span class='size-info'>熱 16oz / 冷 16oz</span>", "t4": "芙香蘋果果茶 <span class='size-info'>熱 16oz / 冷 16oz</span>", "d1": "提拉米蘇 <span class='size-info'>韓國戀人聯名</span>", "d2": "巴斯克乳酪蛋糕", "d3": "蔓越莓乳酪歐式麵包 <span class='size-info'>附油醋醬</span>", "d4": "香草歐式麵包 <span class='size-info'>附油醋醬</span>", "d5": "咖啡吃土奶酪", "d6": "焦糖爆米花 / SoyJoy 棒" },
+            descs: { "a1": "嚴選單一產區豆款，展現明亮酸值與輕盈花果香調。", "a2": "品牌特調中深焙，具備穩定的堅果可可基調與平衡口感。", "a3": "採用低溫慢焙技術，萃取濃郁且低酸度的厚實煙燻韻味。", "a4": "專業處理技術去除咖啡因，保留咖啡原始醇厚香氣。", "l1": "濃縮咖啡與微孔奶泡的精確融合，質地細緻圓潤。", "l2": "經典咖啡結合高品質糖露，襯托義式配方豆的奶油甜感。", "l3": "分層工法呈現，香甜焦糖淋醬與奶泡、咖啡交織的豐富層次。", "l4": "選用高純度可可結合濃縮咖啡，展現飽滿的苦甜質地。", "l5": "使用高品質植物性燕麥奶，強調天然穀物香氣與厚實度。", "l6": "採用法國鐵塔牌鮮奶油與天然香草豆莢，揉合高級蘭姆酒，層次細緻優雅。", "l7": "傳統煉乳風味與醇厚咖啡結合，呈現濃郁的乳香甜度。", "l8": "充滿海島度假感的特調，南洋椰香與咖啡意外合拍。", "l9": "選用巴西豆，純粹鮮奶加入咖啡呈現麥芽奶茶般香甜。", "l10": "濃郁黑糖風味與拿鐵融合，展現醇厚的焦糖化韻味。", "s1": "高飽和度可可與鮮乳融合，風味厚實且無咖啡因負擔。", "s2": "咖啡烘焙脫落薄膜萃取，富含抗氧化成分，口感清爽。", "s3": "西班牙白桃與高級果露，搭配澳洲白桃茶具備細膩層次。", "s4": "天然果香結合細緻氣泡水，呈現純淨清爽風味。", "r1": "新鮮檸檬片與淺焙咖啡結合，口感清爽如檸檬茶。", "r2": "咖啡、檸檬與糖的究極比例，展現豐沛氣泡與多層次的甜。", "r3": "精選濃縮咖啡加上檸檬氣泡飲，完美融合。", "t1": "精選天然草本成分，強調提神且平衡身心之功能性飲品。", "t2": "融合瑪黛葉與牛蒡根，口感溫潤清新，具備極佳風味層次。", "t3": "選用高品質黑醋栗果乾，展現明亮果酸與豐富維生素質感。", "t4": "以天然蘋果乾為基底，呈現清新飽滿的果實甜香。", "d1": "韓國戀人限定，馬斯卡彭與濃縮咖啡的極致融合。", "d2": "高溫烘烤焦糖表層，內部維持濕潤半熟質地。", "d3": "採低溫發酵歐包，內含優質蔓越莓與濃郁乳酪。", "d4": "天然香料製作，口感厚實且具小麥純香。", "d5": "自家烘焙日式濃縮咖啡為基底，質地滑順且具備咖啡乳香。", "d6": "酥脆焦糖與營養大豆，點心輕食首選。" },
             footer: { caf_t: "Caffeine Intake / 咖啡因說明", caf1: "每杯咖啡因總量 201 毫克以上", caf2: "每杯咖啡因總量 101 - 200 毫克", caf3: "每杯咖啡因總量 100 毫克以下", sta_t: "Store Status / 營運狀態", sta_open: "門市營業中", sta_off: "本日固定公休", sta_close: "非營業時間", sta_block: "<div class='opacity-60 font-medium whitespace-nowrap text-right'>營業時間</div><div class='font-medium'>09:00 - 17:00</div><div class='opacity-60 font-medium whitespace-nowrap text-right'>固定公休</div><div class='font-medium'>每週三、每週四</div><div class='opacity-60 font-medium whitespace-nowrap text-center'>電話</div><div class='font-medium'><a href='tel:04-25650817' class='hover:text-[#e67e22] transition-colors underline underline-offset-2'>04-25650817</a></div><div class='opacity-60 font-medium whitespace-nowrap text-center'>地址</div><div class='font-medium leading-relaxed'><a href='https://maps.app.goo.gl/Z381tu2iuHsGH85X9?g_st=ic' target='_blank' class='hover:text-[#e67e22] transition-colors underline underline-offset-2'>台中市大雅區雅環路三段19巷17號</a></div>", con_t: "Connect / 品牌資訊", con1: "橘海，你生活的味道設計師<br>Quality Driven Coffee Roastery.", btn_line: "官方 LINE", btn_survey: "顧客回饋", btn_game: "小遊戲", ai_t: "味道設計師建議", ai_sub: "告訴我您的心情，為您專屬調配味覺體驗：", ai_p: "例如：我現在有點累，想要提神...", ai_btn: "開始設計", nutri_btn: "營養資訊", nutri_title: "品項熱量與糖總量表", nutri_item: "品項 (Item)", nutri_cal: "熱量 (kcal)", nutri_sugar: "糖總量 (g)", nutri_caf: "咖啡因", nutri_note: "※ 數值為標準配方估算值，實際可能因製作有微小誤差。", caf_colors: { red: "紅", yellow: "黃", green: "綠", none: "-" }, g_title: "橘海接接樂 ☕", g_desc: "左右滑動接住好物，避開枯葉，完成五大關卡挑戰！", g_score: "分數: ", g_start: "開始遊戲", g_over: "時間到！", g_again: "再玩一次", g_missed: "漏接了！", g_msg_low: "就差一點了！喝杯咖啡休息一下吧 ☕", g_msg_mid: "身手不錯哦！您的完美咖啡即將為您送上 ✨", g_msg_high: "太神啦！您簡直是橘海的首席咖啡大師 🏆", g_total: "累積總分", g_rank: "本次排名", g_best: "最高分", g_lvl: "關卡 ", g_target: "目標: ", g_lvl_clear: "關卡完成！", g_next_lvl: "進入下一關", g_all_clear: "通關！橘海大師 🏆", lvls: ["純粹採收 (接滿 10 顆咖啡豆)", "拿鐵時光 (接滿 15 滴牛奶)", "挑豆考驗 (避開枯葉，接滿 20 個好物)", "黃金狂熱 (接滿 15 個好物，小心金豆)", "橘海大師 (極速挑戰，接滿 30 個好物)"] }, tags: ["🚀 提神醒腦", "🌿 清新爽口", "☁️ 放鬆心情", "🍯 螞蟻人必喝", "🍵 無咖啡因", "🔮 咖啡占卜"]
         },
         en: {
             langName: "English", mascot: "Care for a coffee? ☕", header: { slogan: "Taste Designer for Your Life" },
-            titles: { ame: "Americano", lat: "Latte Series", spe: "Specialties", roa: "Roaster's Choice", des: "Bites & Desserts", tea: "Fruit/Herbal Tea" },
-            items: { "a1": "Estate Light | Americano", "a2": "CHUHAI | Americano", "a3": "Japanese | Extra Dark Roast", "a4": "Decaf | Americano", "l1": "CHUHAI Latte <span class='size-info'>H 12oz / C 22oz</span>", "l2": "Hazelnut / Vanilla Latte <span class='size-info'>H 10oz / C 16oz</span>", "l3": "Caramel Macchiato <span class='size-info'>H 12oz / C 22oz</span>", "l4": "Mocha Latte <span class='size-info'>H 12oz / C 22oz</span>", "l5": "Oat Milk Latte <span class='size-info'>H 10oz / C 16oz</span>", "l6": "Vienna Latte <span class='size-info'>C 10oz</span>", "l7": "Condensed Milk Latte <span class='size-info'>H 10oz / C 12oz</span>", "l8": "Coconut Latte <span class='size-info'>C 6oz In-Store</span>", "l9": "Japanese Light Latte <span class='size-info'>H 12oz / C 16oz</span>", "l10": "Brown Sugar Latte <span class='size-info'>H 12oz / C 16oz</span>", "s1": "Rich Cocoa Milk <span class='size-info'>16oz</span>", "s2": "Coffee Silverskin Tea <span class='size-info'>16oz</span>", "s3": "White Peach Iced Tea <span class='size-info'>22oz</span>", "s4": "Elderflower / Apple Soda <span class='size-info'>C 16oz</span>", "r1": "Summer Lemon Iced Coffee <span class='size-info'>12oz</span>", "r2": "Sicily Coffee <span class='size-info'>C 22oz</span>", "r3": "Sparkling Lemon Coffee <span class='size-info'>C 22oz</span>", "t1": "Vitality Herbal Tea", "t2": "Mate Burdock Tea", "t3": "Blackcurrant Fruit Tea", "t4": "Apple Hibiscus Tea", "d1": "Tiramisu <span class='size-info'>Korea Lovers Collab</span>", "d2": "Basque Cheesecake", "d3": "Cranberry Cream Cheese Loaf <span class='size-info'>w/ Dip</span>", "d4": "Vanilla Rustic Loaf <span class='size-info'>w/ Dip</span>", "d5": "Coffee Panna Cotta", "d6": "Caramel Popcorn / SoyJoy Bar" },
-            descs: { "a1": "Bright acidity and floral notes, a rich estate-grade experience.", "a2": "Signature CHUHAI blend, nutty & cocoa tones, perfectly balanced.", "a3": "Slow low-temp roast, intense smoky flavor with zero acidity.", "a4": "Professionally decaffeinated, retaining original bold aroma.", "l1": "Select blend intertwined with dense milk foam, silky and round.", "l2": "Classic roasted hazelnut/vanilla aroma perfectly paired with latte.", "l3": "Layered rich caramel sauce and milk foam, a sweet classic.", "l4": "High-purity cocoa meets espresso for a bittersweet full-bodied taste.", "l5": "Premium oat milk, emphasizing natural grain aroma and thickness.", "l6": "Elle & Vire cream with real vanilla bean, infused with premium rum.", "l7": "Traditional condensed milk paired with bold coffee for rich sweetness.", "l8": "Tropical coconut milk pairs surprisingly well with coffee.", "l9": "Reduced espresso ratio for a lighter, smoother milky flavor.", "l10": "Rich handmade brown sugar, aromatic without being overly sweet.", "s1": "High-saturation cocoa blended with milk, thick flavor, caffeine-free.", "s2": "Brewed from coffee silverskin, antioxidant-rich, clean and sweet.", "s3": "Premium white peach syrup infused with tea, delicate layers.", "s4": "Natural fruit notes combined with fine sparkling water.", "r1": "Fresh lemon sweet & sour fused with coffee, top summer cooler.", "r2": "Classic Sicily flavor, the ultimate golden ratio of lemon, sugar and coffee.", "r3": "Added sparkling water for a refreshing and layered experience.", "t1": "Select natural herbs, a mild functional drink to boost energy.", "t2": "Healthy mix of South American Mate and Taiwan Burdock.", "t3": "Rich berry aroma, bright acidity, appetizing and rich in vitamins.", "t4": "Apple fragrance mixed with hibiscus, a relaxing elegant fruit tea.", "d1": "Exclusive brand collab, authentic mascarpone with wine and coffee notes.", "d2": "High-temp baked caramel surface, maintaining a moist texture inside.", "d3": "Slow-fermented loaf, filled with premium cranberries and cream cheese.", "d4": "Made with natural spices, thick texture with pure wheat aroma.", "d5": "Smooth milk panna cotta with espresso and fun cocoa 'dirt' topping.", "d6": "Crispy caramel coating, the best casual snack with coffee." },
+            titles: { ame: "Americano", lat: "Latte Series", spe: "Specialties", roa: "Roaster's Choice", des: "Bites & Desserts", tea: "Fruit/Herbal Tea", teaNote: "Hot Refillable" },
+            items: { "a1": "Estate Light | Americano", "a2": "CHUHAI | Americano", "a3": "Japanese | Extra Dark Roast", "a4": "Decaf | Americano", "l1": "CHUHAI Latte <span class='size-info'>H 12oz / C 22oz</span>", "l2": "Hazelnut / Vanilla Latte <span class='size-info'>H 10oz / C 16oz</span>", "l3": "Caramel Macchiato <span class='size-info'>H 10oz / C 16oz</span>", "l4": "Mocha Latte <span class='size-info'>H 10oz / C 16oz</span>", "l5": "Oat Milk Latte <span class='size-info'>H 10oz / C 16oz</span>", "l6": "Vienna Latte <span class='size-info'>C 16oz</span>", "l7": "Condensed Milk Latte <span class='size-info'>H 10oz / C 16oz</span>", "l8": "Coconut Latte <span class='size-info'>C 6oz In-Store</span>", "l9": "Japanese Light Latte <span class='size-info'>H 12oz / C 16oz</span>", "l10": "Brown Sugar Latte <span class='size-info'>H 12oz / C 16oz</span>", "s1": "Rich Cocoa Milk <span class='size-info'>H 16oz / C 16oz</span>", "s2": "Coffee Silverskin Tea <span class='size-info'>H 16oz / C 16oz</span>", "s3": "White Peach Iced Tea <span class='size-info'>C 20oz</span>", "s4": "Elderflower / Apple Soda <span class='size-info'>C 16oz</span>", "r1": "Summer Lemon Iced Coffee <span class='size-info'>C 16oz</span>", "r2": "Sicily Coffee <span class='size-info'>C 22oz</span>", "r3": "Sparkling Lemon Coffee <span class='size-info'>C 22oz</span>", "t1": "Vitality Herbal Tea <span class='size-info'>H 16oz / C 16oz</span>", "t2": "Mate Burdock Tea <span class='size-info'>H 16oz / C 16oz</span>", "t3": "Blackcurrant Fruit Tea <span class='size-info'>H 16oz / C 16oz</span>", "t4": "Apple Hibiscus Tea <span class='size-info'>H 16oz / C 16oz</span>", "d1": "Tiramisu <span class='size-info'>Korea Lovers Collab</span>", "d2": "Basque Cheesecake", "d3": "Cranberry Cream Cheese Loaf <span class='size-info'>w/ Dip</span>", "d4": "Vanilla Rustic Loaf <span class='size-info'>w/ Dip</span>", "d5": "Coffee Panna Cotta", "d6": "Caramel Popcorn / SoyJoy Bar" },
+            descs: { "a1": "Bright acidity and floral notes, a rich estate-grade experience.", "a2": "Signature CHUHAI blend, nutty & cocoa tones, perfectly balanced.", "a3": "Slow low-temp roast, intense smoky flavor with zero acidity.", "a4": "Professionally decaffeinated, retaining original bold aroma.", "l1": "Select blend intertwined with dense milk foam, silky and round.", "l2": "Classic roasted hazelnut/vanilla aroma perfectly paired with latte.", "l3": "Layered rich caramel sauce and milk foam, a sweet classic.", "l4": "High-purity cocoa meets espresso for a bittersweet full-bodied taste.", "l5": "Premium oat milk, emphasizing natural grain aroma and thickness.", "l6": "Elle & Vire cream with real vanilla bean, infused with premium rum.", "l7": "Traditional condensed milk paired with bold coffee for rich sweetness.", "l8": "Tropical coconut milk pairs surprisingly well with coffee.", "l9": "Reduced espresso ratio for a lighter, smoother milky flavor.", "l10": "Rich handmade brown sugar, aromatic without being overly sweet.", "s1": "High-saturation cocoa blended with milk, thick flavor, caffeine-free.", "s2": "Brewed from coffee silverskin, antioxidant-rich, clean and sweet.", "s3": "Spanish white peach and premium syrup, paired with Australian white peach tea for delicate layers.", "s4": "Natural fruit notes combined with fine sparkling water.", "r1": "Fresh lemon sweet & sour fused with coffee, top summer cooler.", "r2": "Classic Sicily flavor, the ultimate golden ratio of lemon, sugar and coffee.", "r3": "Added sparkling water for a refreshing and layered experience.", "t1": "Select natural herbs, a mild functional drink to boost energy.", "t2": "Healthy mix of South American Mate and Taiwan Burdock.", "t3": "Rich berry aroma, bright acidity, appetizing and rich in vitamins.", "t4": "Apple fragrance mixed with hibiscus, a relaxing elegant fruit tea.", "d1": "Exclusive brand collab, authentic mascarpone with wine and coffee notes.", "d2": "High-temp baked caramel surface, maintaining a moist texture inside.", "d3": "Slow-fermented loaf, filled with premium cranberries and cream cheese.", "d4": "Made with natural spices, thick texture with pure wheat aroma.", "d5": "Smooth milk panna cotta with espresso and fun cocoa 'dirt' topping.", "d6": "Crispy caramel coating, the best casual snack with coffee." },
             footer: { caf_t: "Caffeine Intake Guide", caf1: "Above 201mg/cup", caf2: "101 - 200mg/cup", caf3: "Under 100mg/cup", sta_t: "Store Status", sta_open: "Open Now", sta_off: "Closed (Scheduled)", sta_close: "Closed", sta_block: "<div class='opacity-60 font-medium whitespace-nowrap text-right'>Hours</div><div class='font-medium'>09:00 - 17:00</div><div class='opacity-60 font-medium whitespace-nowrap text-right'>Closed</div><div class='font-medium'>Wed & Thu</div><div class='opacity-60 font-medium whitespace-nowrap text-center'>Tel</div><div class='font-medium'><a href='tel:04-25650817' class='hover:text-[#e67e22] transition-colors underline underline-offset-2'>04-25650817</a></div><div class='opacity-60 font-medium whitespace-nowrap text-center'>Add</div><div class='font-medium leading-relaxed'><a href='https://maps.app.goo.gl/Z381tu2iuHsGH85X9?g_st=ic' target='_blank' class='hover:text-[#e67e22] transition-colors underline underline-offset-2'>No. 17, Ln. 19, Sec. 3, Yahuan Rd., Daya Dist., Taichung</a></div>", con_t: "Connect & Info", con1: "CHUHAI, Your Life Taste Designer.<br>Quality Driven Coffee Roastery.", btn_line: "Official LINE", btn_survey: "Feedback", btn_game: "Mini Game", ai_t: "AI Taste Designer", ai_sub: "Tell me your mood, let me curate a unique flavor for you:", ai_p: "E.g., I'm a bit tired, need a boost...", ai_btn: "Design", nutri_btn: "Nutrition", nutri_title: "Calories & Sugar Facts", nutri_item: "Item", nutri_cal: "Calories (kcal)", nutri_sugar: "Total Sugar (g)", nutri_caf: "Caffeine", nutri_note: "※ Values are estimates based on standard recipes.", caf_colors: { red: "Red", yellow: "Yellow", green: "Green", none: "-" }, g_title: "CHUHAI Catch ☕", g_desc: "Catch items, avoid leaves, and clear 5 levels!", g_score: "Score: ", g_start: "Start", g_over: "Time's Up!", g_again: "Play Again", g_missed: "Missed!", g_msg_low: "Almost there! Have a coffee and relax ☕", g_msg_mid: "Good job! Your perfect coffee is coming right up ✨", g_msg_high: "Amazing! You're like CHUHAI's Master Barista 🏆", g_total: "Total Score", g_rank: "Rank", g_best: "Best", g_lvl: "Level ", g_target: "Goal: ", g_lvl_clear: "Level Cleared!", g_next_lvl: "Next Level", g_all_clear: "All Clear! Master 🏆", lvls: ["Harvest (Catch 10 Beans)", "Latte Time (Catch 15 Milk Drops)", "Sorting (Avoid leaves, catch 20 items)", "Gold Rush (Catch 15 items, watch for gold)", "Master (Speed challenge, catch 30 items)"] }, tags: ["🚀 Energy Boost", "🌿 Refreshing", "☁️ Relaxing", "🍯 Sweet Tooth", "🍵 Caffeine Free", "🔮 Coffee Fortune"]
         },
         ja: { 
             langName: "日本語", mascot: "コーヒーの時間ですか？ ☕", header: { slogan: "あなたの生活を彩るテイストデザイナー" },
-            titles: { ame: "アメリカーノ", lat: "ラテシリーズ", spe: "スペシャルティ", roa: "ロースターおすすめ", des: "軽食・デザート", tea: "ハーブ＆フルーツティー" },
-            items: { "a1": "農園セレクト｜浅煎り", "a2": "橘海｜アメリカーノ", "a3": "日本式｜極深煎り", "a4": "デカフェ｜アメリカーノ", "l1": "橘海ラテ <span class='size-info'>ホット12oz / アイス22oz</span>", "l2": "フレーバーラテ (ヘーゼルナッツ / バニラ) <span class='size-info'>ホット10oz / アイス16oz</span>", "l3": "キャラメルマキアート <span class='size-info'>ホット12oz / アイス22oz</span>", "l4": "カフェモカ <span class='size-info'>ホット12oz / アイス22oz</span>", "l5": "オーツミルクラテ <span class='size-info'>ホット10oz / アイス16oz</span>", "l6": "ウインナーラテ <span class='size-info'>アイス10oz</span>", "l7": "練乳ラテ <span class='size-info'>ホット10oz / アイス12oz</span>", "l8": "ココナッツミルクラテ <span class='size-info'>アイス6oz 店内</span>", "l9": "和風ライトラテ <span class='size-info'>ホット12oz / アイス16oz</span>", "l10": "黒糖ラテ <span class='size-info'>ホット12oz / アイス16oz</span>", "s1": "濃厚ココアミルク <span class='size-info'>16oz</span>", "s2": "シルバースキンティー <span class='size-info'>16oz</span>", "s3": "白桃アイスティー <span class='size-info'>22oz</span>", "s4": "フルーツソーダ (エルダーフラワー / アップル) <span class='size-info'>アイス16oz</span>", "r1": "サマーレモンアイスコーヒー <span class='size-info'>12oz</span>", "r2": "シチリアコーヒー <span class='size-info'>アイス22oz</span>", "r3": "スパークリングレモンコーヒー <span class='size-info'>アイス22oz</span>", "t1": "元気ハーブティー", "t2": "マテ茶＆ごぼうティー", "t3": "カシスフルーツティー", "t4": "アップルハイビスカスティー", "d1": "ティラミス <span class='size-info'>韓国コラボ</span>", "d2": "バスクチーズケーキ", "d3": "クランベリーチーズのカンパーニュ <span class='size-info'>ソース付</span>", "d4": "バニラのカンパーニュ <span class='size-info'>ソース付</span>", "d5": "食べるコーヒーパンナコッタ", "d6": "キャラメルポップコーン / SOYJOY（大豆バー）" },
-            descs: { "a1": "明るい酸味と花のような香り、豊かな農園グレードの体験。", "a2": "橘海の看板ブレンド。ナッツとカカオの調和が取れた滑らかな味わい。", "a3": "低温でゆっくり焙煎。酸味がなく、力強いスモーキーな風味。", "a4": "カフェインを専門的に除去しつつ、本来の芳醇な香りを保持。", "l1": "厳選ブレンドと濃厚なミルクフォームの交わり、きめ細やかでまろやか。", "l2": "香ばしいシロップの香りがラテに絶妙にマッチ。", "l3": "濃厚なキャラメルソースとミルクフォームの層。定番の組み合わせ。", "l4": "高純度カカオとエスプレッソ。ほろ苦くコクのある味わい。", "l5": "高品質のオーツミルクを使用。天然の穀物の香りとコク。", "l6": "高級生クリームと天然バニラビーンズ、ラム酒を加えた上品な層。", "l7": "伝統的な練乳と濃厚なコーヒーの組み合わせ。", "l8": "南国リゾート気分。ココナッツとコーヒーの意外な好相性。", "l9": "エスプレッソの比率を減らし、ミルクの甘みを引き立てた軽やかなラテ。", "l10": "手作りの濃厚な黒糖を使用。香りが良く、甘すぎない。", "s1": "濃厚なココアとミルクの融合。カフェインフリー。", "s2": "焙煎の副産物である薄皮から抽出。抗酸化物質が豊富で爽やかな甘み。", "s3": "白桃シロップと茶葉を浸出。繊細な甘酸っぱさ。", "s4": "天然のフルーツの香りと微炭酸。フルーティーで爽やかな風味。", "r1": "新鮮なレモンの甘酸っぱさとコーヒーの融合。夏の定番。", "r2": "伝統的なシチリア風味。レモン、砂糖、コーヒーの究極の黄金比。", "r3": "炭酸水を加え、より清涼感のある層の深い体験。", "t1": "天然ハーブを厳選してブレンド。優しく活力を与える機能性ドリンク。", "t2": "南米のマテ茶と台湾ごぼうの健康的な組み合わせ。温かく甘い後味。", "t3": "濃厚なベリーの香り。明るい酸味が食欲をそそるビタミン豊富な一杯。", "t4": "リンゴの香りとハイビスカスが交わる、心身を癒すエレガントなフルーツティー。", "d1": "韓国ブランドとの独占コラボ。本格マスカルポーネとコーヒーの融合。", "d2": "高温で焼き上げたキャラメル表面と、しっとり半熟のチーズの質感。", "d3": "低温発酵パンに、上質なクランベリーと濃厚なチーズを包みました。", "d4": "天然スパイスを使用。小麦の純粋な香りが楽しめるしっかりとした食感。", "d5": "滑らかなミルクパンナコッタにエスプレッソとココアパウダーを合わせた楽しいデザート。", "d6": "サクサクのキャラメルコーティング。コーヒーのお供に最適。" },
+            titles: { ame: "アメリカーノ", lat: "ラテシリーズ", spe: "スペシャルティ", roa: "ロースターおすすめ", des: "軽食・デザート", tea: "ハーブ＆フルーツティー", teaNote: "ホットはお湯足し可" },
+            items: { "a1": "農園セレクト｜浅煎り", "a2": "橘海｜アメリカーノ", "a3": "日本式｜極深煎り", "a4": "デカフェ｜アメリカーノ", "l1": "橘海ラテ <span class='size-info'>ホット12oz / アイス22oz</span>", "l2": "フレーバーラテ (ヘーゼルナッツ / バニラ) <span class='size-info'>ホット10oz / アイス16oz</span>", "l3": "キャラメルマキアート <span class='size-info'>ホット10oz / アイス16oz</span>", "l4": "カフェモカ <span class='size-info'>ホット10oz / アイス16oz</span>", "l5": "オーツミルクラテ <span class='size-info'>ホット10oz / アイス16oz</span>", "l6": "ウインナーラテ <span class='size-info'>アイス16oz</span>", "l7": "練乳ラテ <span class='size-info'>ホット10oz / アイス16oz</span>", "l8": "ココナッツミルクラテ <span class='size-info'>アイス6oz 店内</span>", "l9": "和風ライトラテ <span class='size-info'>ホット12oz / アイス16oz</span>", "l10": "黒糖ラテ <span class='size-info'>ホット12oz / アイス16oz</span>", "s1": "濃厚ココアミルク <span class='size-info'>ホット16oz / アイス16oz</span>", "s2": "シルバースキンティー <span class='size-info'>ホット16oz / アイス16oz</span>", "s3": "白桃アイスティー <span class='size-info'>アイス20oz</span>", "s4": "フルーツソーダ (エルダーフラワー / アップル) <span class='size-info'>アイス16oz</span>", "r1": "サマーレモンアイスコーヒー <span class='size-info'>アイス16oz</span>", "r2": "シチリアコーヒー <span class='size-info'>アイス22oz</span>", "r3": "スパークリングレモンコーヒー <span class='size-info'>アイス22oz</span>", "t1": "元気ハーブティー <span class='size-info'>ホット16oz / アイス16oz</span>", "t2": "マテ茶＆ごぼうティー <span class='size-info'>ホット16oz / アイス16oz</span>", "t3": "カシスフルーツティー <span class='size-info'>ホット16oz / アイス16oz</span>", "t4": "アップルハイビスカスティー <span class='size-info'>ホット16oz / アイス16oz</span>", "d1": "ティラミス <span class='size-info'>韓国コラボ</span>", "d2": "バスクチーズケーキ", "d3": "クランベリーチーズのカンパーニュ <span class='size-info'>ソース付</span>", "d4": "バニラのカンパーニュ <span class='size-info'>ソース付</span>", "d5": "食べるコーヒーパンナコッタ", "d6": "キャラメルポップコーン / SOYJOY（大豆バー）" },
+            descs: { "a1": "明るい酸味と花のような香り、豊かな農園グレードの体験。", "a2": "橘海の看板ブレンド。ナッツとカカオの調和が取れた滑らかな味わい。", "a3": "低温でゆっくり焙煎。酸味がなく、力強いスモーキーな風味。", "a4": "カフェインを専門的に除去しつつ、本来の芳醇な香りを保持。", "l1": "厳選ブレンドと濃厚なミルクフォームの交わり、きめ細やかでまろやか。", "l2": "香ばしいシロップの香りがラテに絶妙にマッチ。", "l3": "濃厚なキャラメルソースとミルクフォームの層。定番の組み合わせ。", "l4": "高純度カカオとエスプレッソ。ほろ苦くコクのある味わい。", "l5": "高品質のオーツミルクを使用。天然の穀物の香りとコク。", "l6": "高級生クリームと天然バニラビーンズ、ラム酒を加えた上品な層。", "l7": "伝統的な練乳と濃厚なコーヒーの組み合わせ。", "l8": "南国リゾート気分。ココナッツとコーヒーの意外な好相性。", "l9": "エスプレッソの比率を減らし、ミルクの甘みを引き立てた軽やかなラテ。", "l10": "手作りの濃厚な黒糖を使用。香りが良く、甘すぎない。", "s1": "濃厚なココアとミルクの融合。カフェインフリー。", "s2": "焙煎の副産物である薄皮から抽出。抗酸化物質が豊富で爽やかな甘み。", "s3": "スペイン産白桃と高級シロップ、オーストラリア産白桃ティーを合わせた繊細なレイヤー。", "s4": "天然のフルーツの香りと微炭酸。フルーティーで爽やかな風味。", "r1": "新鮮なレモンの甘酸っぱさとコーヒーの融合。夏の定番。", "r2": "伝統的なシチリア風味。レモン、砂糖、コーヒーの究極の黄金比。", "r3": "炭酸水を加え、より清涼感のある層の深い体験。", "t1": "天然ハーブを厳選してブレンド。優しく活力を与える機能性ドリンク。", "t2": "南米のマテ茶と台湾ごぼうの健康的な組み合わせ。温かく甘い後味。", "t3": "濃厚なベリーの香り。明るい酸味が食欲をそそるビタミン豊富な一杯。", "t4": "リンゴの香りとハイビスカスが交わる、心身を癒すエレガントなフルーツティー。", "d1": "韓国ブランドとの独占コラボ。本格マスカルポーネとコーヒーの融合。", "d2": "高温で焼き上げたキャラメル表面と、しっとり半熟のチーズの質感。", "d3": "低温発酵パンに、上質なクランベリーと濃厚なチーズを包みました。", "d4": "天然スパイスを使用。小麦の純粋な香りが楽しめるしっかりとした食感。", "d5": "滑らかなミルクパンナコッタにエスプレッソとココアパウダーを合わせた楽しいデザート。", "d6": "サクサクのキャラメルコーティング。コーヒーのお供に最適。" },
             footer: { caf_t: "カフェイン含有量", caf1: "1杯あたり201mg以上", caf2: "1杯あたり101〜200mg", caf3: "1杯あたり100mg以下", sta_t: "営業ステータス", sta_open: "営業中", sta_off: "本日は定休日です", sta_close: "営業時間外", sta_block: "<div class='opacity-60 font-medium whitespace-nowrap text-right'>営業時間</div><div class='font-medium'>09:00 - 17:00</div><div class='opacity-60 font-medium whitespace-nowrap text-right'>定休日</div><div class='font-medium'>水曜・木曜</div><div class='opacity-60 font-medium whitespace-nowrap text-center'>電話</div><div class='font-medium'><a href='tel:04-25650817' class='hover:text-[#e67e22] transition-colors underline underline-offset-2'>04-25650817</a></div><div class='opacity-60 font-medium whitespace-nowrap text-center'>住所</div><div class='font-medium leading-relaxed'><a href='https://maps.app.goo.gl/Z381tu2iuHsGH85X9?g_st=ic' target='_blank' class='hover:text-[#e67e22] transition-colors underline underline-offset-2'>台中市大雅区雅環路三段19巷17号</a></div>", con_t: "ブランド情報", con1: "橘海 - あなたの生活を彩るテイストデザイナー<br>Quality Driven Coffee Roastery.", btn_line: "公式 LINE", btn_survey: "ご意見・ご感想", btn_game: "ミニゲーム", ai_t: "AI テイストデザイナー", ai_sub: "今の気分を教えてください。特別な一杯をご提案します：", ai_p: "例：少し疲れたので、リフレッシュしたい...", ai_btn: "提案", nutri_btn: "栄養成分", nutri_title: "カロリーと糖質", nutri_item: "メニュー", nutri_cal: "カロリー (kcal)", nutri_sugar: "総糖質 (g)", nutri_caf: "カフェイン", nutri_note: "※ 数値は標準レシピによる推定値です。", caf_colors: { red: "赤", yellow: "黄", green: "緑", none: "-" }, g_title: "橘海キャッチ ☕", g_desc: "アイテムをキャッチして枯れ葉を避け、5つのステージをクリア！", g_score: "スコア: ", g_start: "スタート", g_over: "終了！", g_again: "もう一度", g_missed: "落としました！", g_msg_low: "惜しい！コーヒーを飲んで一息つきましょう ☕", g_msg_mid: "お見事！美味しいコーヒーをお届けします ✨", g_msg_high: "素晴らしい！あなたは橘海のマスターバリスタです 🏆", g_total: "累計スコア", g_rank: "ランキング", g_best: "ベスト", g_lvl: "ステージ ", g_target: "目標: ", g_lvl_clear: "クリア！", g_next_lvl: "次のステージへ", g_all_clear: "全クリア！マスター 🏆", lvls: ["収穫 (豆を10個)", "ラテタイム (ミルクを15個)", "選別 (枯れ葉を避け、20個キャッチ)", "ゴールドラッシュ (15個キャッチ、金豆に注意)", "橘海マスター (極速！30個キャッチ)"] }, tags: ["🚀 リフレッシュ", "🌿 すっきり", "☁️ リラックス", "🍯 甘党", "🍵 カフェインレス", "🔮 コーヒー占い"]
         },
         ko: { 
             langName: "한국어", mascot: "커피 한잔 할래요? ☕", header: { slogan: "당신의 일상을 디자인하는 플레이버 디자이너" },
-            titles: { ame: "아메리카노", lat: "라떼", spe: "스페셜티", roa: "로스터 추천", des: "디저트 & 스낵", tea: "과일/허브 티" },
-            items: { "a1": "에스테이트 셀렉트 | 라이트 로스트", "a2": "추하이 | 아메리카노", "a3": "재패니즈 로스트 | 엑스트라 다크", "a4": "디카페인 | 아메리카노", "l1": "추하이 라떼 <span class='size-info'>Hot 12oz / Ice 22oz</span>", "l2": "헤이즐넛 / 바닐라 라떼 <span class='size-info'>Hot 10oz / Ice 16oz</span>", "l3": "카라멜 마키아토 <span class='size-info'>Hot 12oz / Ice 22oz</span>", "l4": "모카 라떼 <span class='size-info'>Hot 12oz / Ice 22oz</span>", "l5": "오트밀크 라떼 <span class='size-info'>Hot 10oz / Ice 16oz</span>", "l6": "비엔나 라떼 <span class='size-info'>Ice 10oz</span>", "l7": "연유 라떼 <span class='size-info'>Hot 10oz / Ice 12oz</span>", "l8": "코코넛 라떼 <span class='size-info'>Ice 6oz 매장용</span>", "l9": "재패니즈 라이트 라떼 <span class='size-info'>Hot 12oz / Ice 16oz</span>", "l10": "흑당 라떼 <span class='size-info'>Hot 12oz / Ice 16oz</span>", "s1": "리치 코코아 밀크 <span class='size-info'>16oz</span>", "s2": "커피 실버스킨 티 <span class='size-info'>16oz</span>", "s3": "백도 아이스티 <span class='size-info'>22oz</span>", "s4": "프룻 소다 (엘더플라워 / 애플) <span class='size-info'>Ice 16oz</span>", "r1": "썸머 레몬 아이스 커피 <span class='size-info'>12oz</span>", "r2": "시칠리아 커피 <span class='size-info'>Ice 22oz</span>", "r3": "스파클링 레몬 커피 <span class='size-info'>Ice 22oz</span>", "t1": "바이탈리티 허브 티", "t2": "마테 우엉차", "t3": "블랙커런트 프룻 티", "t4": "애플 히비스커스 티", "d1": "티라미수 <span class='size-info'>한국 브랜드 콜라보</span>", "d2": "바스크 치즈 케이크", "d3": "크랜베리 크림치즈 캄파뉴 <span class='size-info'>소스 포함</span>", "d4": "바닐라 캄파뉴 <span class='size-info'>소스 포함</span>", "d5": "커피 판나코타", "d6": "카라멜 팝콘 / 소이조이 에너지바" },
-            descs: { "a1": "밝은 산미와 꽃 향기, 풍부한 농장급 경험.", "a2": "추하이 시그니처 블렌드, 견과류와 코코아의 완벽한 밸런스.", "a3": "저온 슬로우 로스팅, 산미 없는 강렬한 스모키 풍미.", "a4": "전문적인 디카페인 공정, 커피 본연의 풍부한 향 유지.", "l1": "엄선된 블렌드와 조밀한 우유 거품의 만남, 부드럽고 둥근 식감.", "l2": "클래식한 시럽 향과 카페 라떼의 완벽한 조화.", "l3": "진한 카라멜 소스와 우유 거품의 층, 달콤한 커피의 클래식.", "l4": "고순도 코코아와 에스프레소가 만난 쌉싸름하고 묵직한 맛.", "l5": "고품질 오트 밀크를 사용해 곡물 향과 바디감을 강조.", "l6": "프랑스산 생크림, 천연 바닐라빈, 럼이 어우러진 고급스러운 라떼.", "l7": "전통적인 연유의 달콤함과 진한 커피의 조화.", "l8": "휴양지 느낌의 스페셜티, 코코넛 밀크와 커피의 놀라운 궁합.", "l9": "에스프레소 비율을 줄여 우유의 단맛을 살린 가벼운 라떼.", "l10": "수제 흑당이 들어가 향이 진하면서도 지나치게 달지 않은 라떼.", "s1": "진한 코코아와 우유의 만남, 카페인 없는 묵직한 맛.", "s2": "커피 로스팅 부산물인 실버스킨 추출물, 항산화 성분이 풍부하고 깔끔함.", "s3": "프리미 백도 시럽과 찻잎, 섬세하고 새콤달콤한 맛.", "s4": "천연 과일 향과 미세한 탄산수의 깔끔하고 청량한 맛.", "r1": "신선한 레몬의 새콤달콤함과 커피의 융합, 여름철 최고 음료.", "r2": "클래식 시칠리아 풍미, 레몬, 설탕, 커피의 궁극의 황금비율.", "r3": "탄산수를 더해 더욱 시원하고 층이 깊은 청량감을 제공합니다.", "t1": "엄선된 천연 허브, 기운을 북돋아주는 기능성 음료.", "t2": "남미산 마테차와 대만산 우엉의 건강한 조합, 따뜻하고 깔끔한 뒷맛.", "t3": "진한 베리 향, 식욕을 돋우는 밝은 산미와 풍부한 비탁민.", "t4": "사과 향과 히비스커스의 교차, 심신을 달래주는 우아한 과일차.", "d1": "한국 브랜드 독점 콜라보, 정통 마스카포네 치즈와 커피의 궁극적 결합.", "d2": "고온에서 구운 카라멜 표면과 촉촉한 반숙 치즈 질감.", "d3": "크랜베리와 진한 크림치즈가 들어간 저온 발효 빵.", "d4": "천연 향신료를 사용해 묵직한 식감과 순수한 밀 향.", "d5": "에스프레소와 코코아 가루를 더한 부드러운 우유 판나코타 흙 파먹기 재미.", "d6": "바삭한 카라멜 코팅, 커피와 함께하기 좋은 최고의 스낵." },
+            titles: { ame: "아메리카노", lat: "라떼", spe: "스페셜티", roa: "로스터 추천", des: "디저트 & 스낵", tea: "과일/허브 티", teaNote: "따뜻한 음료 리필 가능" },
+            items: { "a1": "에스테이트 셀렉트 | 라이트 로스트", "a2": "추하이 | 아메리카노", "a3": "재패니즈 로스트 | 엑스트라 다크", "a4": "디카페인 | 아메리카노", "l1": "추하이 라떼 <span class='size-info'>Hot 12oz / Ice 22oz</span>", "l2": "헤이즐넛 / 바닐라 라떼 <span class='size-info'>Hot 10oz / Ice 16oz</span>", "l3": "카라멜 마키아토 <span class='size-info'>Hot 10oz / Ice 16oz</span>", "l4": "모카 라떼 <span class='size-info'>Hot 10oz / Ice 16oz</span>", "l5": "오트밀크 라떼 <span class='size-info'>Hot 10oz / Ice 16oz</span>", "l6": "비엔나 라떼 <span class='size-info'>Ice 16oz</span>", "l7": "연유 라떼 <span class='size-info'>Hot 10oz / Ice 16oz</span>", "l8": "코코넛 라떼 <span class='size-info'>Ice 6oz 매장용</span>", "l9": "재패니즈 라이트 라떼 <span class='size-info'>Hot 12oz / Ice 16oz</span>", "l10": "흑당 라떼 <span class='size-info'>Hot 12oz / Ice 16oz</span>", "s1": "리치 코코아 밀크 <span class='size-info'>Hot 16oz / Ice 16oz</span>", "s2": "커피 실버스킨 티 <span class='size-info'>Hot 16oz / Ice 16oz</span>", "s3": "백도 아이스티 <span class='size-info'>Ice 20oz</span>", "s4": "프룻 소다 (엘더플라워 / 애플) <span class='size-info'>Ice 16oz</span>", "r1": "썸머 레몬 아이스 커피 <span class='size-info'>Ice 16oz</span>", "r2": "시칠리아 커피 <span class='size-info'>Ice 22oz</span>", "r3": "스파클링 레몬 커피 <span class='size-info'>Ice 22oz</span>", "t1": "바이탈리티 허브 티 <span class='size-info'>Hot 16oz / Ice 16oz</span>", "t2": "마테 우엉차 <span class='size-info'>Hot 16oz / Ice 16oz</span>", "t3": "블랙커런트 프룻 티 <span class='size-info'>Hot 16oz / Ice 16oz</span>", "t4": "애플 히비스커스 티 <span class='size-info'>Hot 16oz / Ice 16oz</span>", "d1": "티라미수 <span class='size-info'>한국 브랜드 콜라보</span>", "d2": "바스크 치즈 케이크", "d3": "크랜베리 크림치즈 캄파뉴 <span class='size-info'>소스 포함</span>", "d4": "바닐라 캄파뉴 <span class='size-info'>소스 포함</span>", "d5": "커피 판나코타", "d6": "카라멜 팝콘 / 소이조이 에너지바" },
+            descs: { "a1": "밝은 산미와 꽃 향기, 풍부한 농장급 경험.", "a2": "추하이 시그니처 블렌드, 견과류와 코코아의 완벽한 밸런스.", "a3": "저온 슬로우 로스팅, 산미 없는 강렬한 스모키 풍미.", "a4": "전문적인 디카페인 공정, 커피 본연의 풍부한 향 유지.", "l1": "엄선된 블렌드와 조밀한 우유 거품의 만남, 부드럽고 둥근 식감.", "l2": "클래식한 시럽 향과 카페 라떼의 완벽한 조화.", "l3": "진한 카라멜 소스와 우유 거품의 층, 달콤한 커피의 클래식.", "l4": "고순도 코코아와 에스프레소가 만난 쌉싸름하고 묵직한 맛.", "l5": "고품질 오트 밀크를 사용해 곡물 향과 바디감을 강조.", "l6": "프랑스산 생크림, 천연 바닐라빈, 럼이 어우러진 고급스러운 라떼.", "l7": "전통적인 연유의 달콤함과 진한 커피의 조화.", "l8": "휴양지 느낌의 스페셜티, 코코넛 밀크와 커피의 놀라운 궁합.", "l9": "에스프레소 비율을 줄여 우유의 단맛을 살린 가벼운 라떼.", "l10": "수제 흑당이 들어가 향이 진하면서도 지나치게 달지 않은 라떼.", "s1": "진한 코코아와 우유의 만남, 카페인 없는 묵직한 맛.", "s2": "커피 로스팅 부산물인 실버스킨 추출물, 항산화 성분이 풍부하고 깔끔함.", "s3": "스페인산 백도와 고급 시럽, 호주산 백도 티를 더한 섬세한 레이어.", "s4": "천연 과일 향과 미세한 탄산수의 깔끔하고 청량한 맛.", "r1": "신선한 레몬의 새콤달콤함과 커피의 융합, 여름철 최고 음료.", "r2": "클래식 시칠리아 풍미, 레몬, 설탕, 커피의 궁극의 황금비율.", "r3": "탄산수를 더해 더욱 시원하고 층이 깊은 청량감을 제공합니다.", "t1": "엄선된 천연 허브, 기운을 북돋아주는 기능성 음료.", "t2": "남미산 마테차와 대만산 우엉의 건강한 조합, 따뜻하고 깔끔한 뒷맛.", "t3": "진한 베리 향, 식욕을 돋우는 밝은 산미와 풍부한 비탁민.", "t4": "사과 향과 히비스커스의 교차, 심신을 달래주는 우아한 과일차.", "d1": "한국 브랜드 독점 콜라보, 정통 마스카포네 치즈와 커피의 궁극적 결합.", "d2": "고온에서 구운 카라멜 표면과 촉촉한 반숙 치즈 질감.", "d3": "크랜베리와 진한 크림치즈가 들어간 저온 발효 빵.", "d4": "천연 향신료를 사용해 묵직한 식감과 순수한 밀 향.", "d5": "에스프레소와 코코아 가루를 더한 부드러운 우유 판나코타 흙 파먹기 재미.", "d6": "바삭한 카라멜 코팅, 커피와 함께하기 좋은 최고의 스낵." },
             footer: { caf_t: "카페인 함량 안내", caf1: "1잔당 201mg 이상", caf2: "1잔당 101 - 200mg", caf3: "1잔당 100mg 이하", sta_t: "영업 상태", sta_open: "영업 중", sta_off: "금일 정기 휴무", sta_close: "영업 시간 아님", sta_block: "<div class='opacity-60 font-medium whitespace-nowrap text-right'>영업시간</div><div class='font-medium'>09:00 - 17:00</div><div class='opacity-60 font-medium whitespace-nowrap text-right'>정기휴무</div><div class='font-medium'>수, 목</div><div class='opacity-60 font-medium whitespace-nowrap text-center'>전화</div><div class='font-medium'><a href='tel:04-25650817' class='hover:text-[#e67e22] transition-colors underline underline-offset-2'>04-25650817</a></div><div class='opacity-60 font-medium whitespace-nowrap text-center'>주소</div><div class='font-medium leading-relaxed'><a href='https://maps.app.goo.gl/Z381tu2iuHsGH85X9?g_st=ic' target='_blank' class='hover:text-[#e67e22] transition-colors underline underline-offset-2'>타이중시 다야구 야환루 3단 19향 17호</a></div>", con_t: "브랜드 정보", con1: "추하이, 당신의 일상을 디자인하는 플레이버 디자이너<br>Quality Driven Coffee Roastery.", btn_line: "공식 LINE", btn_survey: "고객 피드백", btn_game: "미니 게임", ai_t: "AI 플레이버 디자이너", ai_sub: "기분을 알려주시면, 당신만의 특별한 맛을 디자인해 드립니다:", ai_p: "예: 조금 피곤해서 활력이 필요해요...", ai_btn: "디자인 시작", nutri_btn: "영양 성분", nutri_title: "칼로리 및 당류", nutri_item: "메뉴", nutri_cal: "칼로리 (kcal)", nutri_sugar: "총 당류 (g)", nutri_caf: "카페인", nutri_note: "※ 수치는 표준 레시피에 따른 추정치입니다.", caf_colors: { red: "빨강", yellow: "노랑", green: "초록", none: "-" }, g_title: "추하이 캐치 ☕", g_desc: "아이템을 잡고 낙엽을 피해 5단계를 클리어하세요!", g_score: "점수: ", g_start: "시작", g_over: "시간 종료!", g_again: "다시하기", g_missed: "놓쳤어요!", g_msg_low: "아깝네요! 커피 한 잔하며 쉬어가세요 ☕", g_msg_mid: "훌륭해요! 완벽한 커피가 곧 준비됩니다 ✨", g_msg_high: "대단해요! 추하이의 수석 바리스타시군요 🏆", g_total: "누적 총점", g_rank: "순위", g_best: "최고 점수", g_lvl: "레벨 ", g_target: "목표: ", g_lvl_clear: "레벨 클리어!", g_next_lvl: "다음 레벨", g_all_clear: "올 클리어! 마스터 🏆", lvls: ["수확 (커피콩 10개)", "라떼 타임 (우유 15개)", "선별 (낙엽 피하고 20개 잡기)", "골드 러시 (15개 잡기, 황금콩 주의)", "추하이 마스터 (스피드! 30개 잡기)"] }, tags: ["🚀 에너지 충전", "🌿 상쾌하게", "☁️ 릴렉스", "🍯 달콤한 맛", "🍵 무카페인", "🔮 커피 운세"]
         },
         cs: { 
             langName: "Čeština", mascot: "Dáte si kávu? ☕", header: { slogan: "Designér chuti pro váš život" },
-            titles: { ame: "Americano", lat: "Latte Série", spe: "Speciální Nápoje", roa: "Doporučení Pražiče", des: "Dezerty a Jídlo", tea: "Ovocné/Bylinné Čaje" },
-            items: { "a1": "Estate Select | Světle pražené", "a2": "CHUHAI | Americano", "a3": "Japonské | Extra tmavě pražené", "a4": "Bez kofeinu | Americano", "l1": "CHUHAI Latte <span class='size-info'>H 12oz / C 22oz</span>", "l2": "Ochucené Latte (Oříšek/Vanilka) <span class='size-info'>H 10oz / C 16oz</span>", "l3": "Karamelové Macchiato <span class='size-info'>H 12oz / C 22oz</span>", "l4": "Mocha Latte <span class='size-info'>H 12oz / C 22oz</span>", "l5": "Ovesné Latte <span class='size-info'>H 10oz / C 16oz</span>", "l6": "Vídeňské Latte <span class='size-info'>C 10oz</span>", "l7": "Kondenzované Mléko Latte <span class='size-info'>H 10oz / C 12oz</span>", "l8": "Kokosové Latte <span class='size-info'>C 6oz (Uvnitř)</span>", "l9": "Japonské Světlé Latte <span class='size-info'>H 12oz / C 16oz</span>", "l10": "Latte s hnědým cukrem <span class='size-info'>H 12oz / C 16oz</span>", "s1": "Bohaté Kakaové Mléko <span class='size-info'>16oz</span>", "s2": "Čaj z kávových slupek <span class='size-info'>16oz</span>", "s3": "Bílý Broskvový Ledový Čaj <span class='size-info'>22oz</span>", "s4": "Ovocný Soda (Bezinka/Jablko) <span class='size-info'>C 16oz</span>", "r1": "Letní citronová ledová káva <span class='size-info'>12oz</span>", "r2": "Sicilská káva <span class='size-info'>C 22oz</span>", "r3": "Perlivá citronová káva <span class='size-info'>C 22oz</span>", "t1": "Bylinný čaj Vitalita", "t2": "Čaj maté s lopuchem", "t3": "Čaj z černého rybízu", "t4": "Jablečno-ibiškový čaj", "d1": "Tiramisu <span class='size-info'>Korea Lovers Spolupráce</span>", "d2": "Baskický Tvarohový Koláč", "d3": "Brusinkový Tvarohový Chléb <span class='size-info'>s dipem</span>", "d4": "Vanilkový Selský Chléb <span class='size-info'>s dipem</span>", "d5": "Kávová Panna Cotta", "d6": "Karamelový Popcorn / Energetická tyčinka SOYJOY" },
-            descs: { "a1": "Jasná kyselost a květinové tóny, bohatý zážitek výběrové kávy.", "a2": "Typická směs CHUHAI, oříškové a kakaové tóny, dokonale vyvážené.", "a3": "Pomalé pražení při nízké teplotě, intenzivní kouřová chuť bez kyselosti.", "a4": "Profesionálně odstraněn kofein, zachovává původní aroma zrna.", "l1": "Vybraná směs propletená s hustou mléčnou pěnou, jemná a kulatá.", "l2": "Klasické sirupové aroma se skvěle hodí k latte.", "l3": "Vrstvená bohatá karamelová omáčka a mléčná pěna, sladká klasika.", "l4": "Vysoce čisté kakao se potkává s espressem pro plnou hořkosladkou chuť.", "l5": "Prémiové ovesné mléko, důraz na přírodní obilné aroma a plnost.", "l6": "Francouzská smetana, pravá vanilka, doladěné kapkou prémiového rumu.", "l7": "Tradiční chuť kondenzovaného mléka spojená s kávou, bohatá mléčná sladkost.", "l8": "Speciál s ostrovní atmosférou, kokosové mléko a káva se nečekaně hodí.", "l9": "Snížený podíl espressa pro lehčí, hladší mléčnou chuť.", "l10": "Bohatý ručně vařený hnědý cukr, aromatický a nepřeslazený.", "s1": "Bohaté kakao smíchané s mlékem, hutná chuť, bez kofeinu.", "s2": "Výluh z kávových slupek, bohatý na antioxidanty, čistý a sladký.", "s3": "Prémiový sirup z bílých broskví louhovaný s čajem, jemná sladkokyselá chuť.", "s4": "Přírodní ovocné tóny v kombinaci s jemnou perlivou vodou.", "r1": "Sladkokyselé čerstvé citrony spojené s kávou, letní osvěžení.", "r2": "Klasická sicilská chuť, dokonalý zlatý poměr citronu, cukru a kávy.", "r3": "Přidaná perlivá voda pro osvěžující a hluboký zážitek.", "t1": "Vybrané přírodní byliny, jemný funkční nápoj pro zvýšení energie.", "t2": "Zdravý mix jihoamerického maté a tchajwanského lopuchu.", "t3": "Bohaté aroma bobulí, jasná kyselost, povzbuzující a plné vitamínů.", "t4": "Jablečná vůně smíchaná s ibiškem, relaxační elegantní ovocný čaj.", "d1": "Exkluzivní spolupráce, autentické mascarpone s tóny vína a kávy.", "d2": "Povrch z pečeného karamelu, uvnitř vláčná polopečená sýrová textura.", "d3": "Pomalu kynutý chléb, plněný prémiovými brusinkami a smetanovým sýrem.", "d4": "Vyrobeno z přírodního koření, hutná textura s vůní pšenice.", "d5": "Jemná mléčná panna cotta s espressem a zábavnou kakaovou 'hlínou'.", "d6": "Křupavá karamelová poleva, nejlepší lehký snack ke kávě." },
+            titles: { ame: "Americano", lat: "Latte Série", spe: "Speciální Nápoje", roa: "Doporučení Pražiče", des: "Dezerty a Jídlo", tea: "Ovocné/Bylinné Čaje", teaNote: "Teplé lze dolít" },
+            items: { "a1": "Estate Select | Světle pražené", "a2": "CHUHAI | Americano", "a3": "Japonské | Extra tmavě pražené", "a4": "Bez kofeinu | Americano", "l1": "CHUHAI Latte <span class='size-info'>H 12oz / C 22oz</span>", "l2": "Ochucené Latte (Oříšek/Vanilka) <span class='size-info'>H 10oz / C 16oz</span>", "l3": "Karamelové Macchiato <span class='size-info'>H 10oz / C 16oz</span>", "l4": "Mocha Latte <span class='size-info'>H 10oz / C 16oz</span>", "l5": "Ovesné Latte <span class='size-info'>H 10oz / C 16oz</span>", "l6": "Vídeňské Latte <span class='size-info'>C 16oz</span>", "l7": "Kondenzované Mléko Latte <span class='size-info'>H 10oz / C 16oz</span>", "l8": "Kokosové Latte <span class='size-info'>C 6oz (Uvnitř)</span>", "l9": "Japonské Světlé Latte <span class='size-info'>H 12oz / C 16oz</span>", "l10": "Latte s hnědým cukrem <span class='size-info'>H 12oz / C 16oz</span>", "s1": "Bohaté Kakaové Mléko <span class='size-info'>H 16oz / C 16oz</span>", "s2": "Čaj z kávových slupek <span class='size-info'>H 16oz / C 16oz</span>", "s3": "Bílý Broskvový Ledový Čaj <span class='size-info'>C 20oz</span>", "s4": "Ovocný Soda (Bezinka/Jablko) <span class='size-info'>C 16oz</span>", "r1": "Letní citronová ledová káva <span class='size-info'>C 16oz</span>", "r2": "Sicilská káva <span class='size-info'>C 22oz</span>", "r3": "Perlivá citronová káva <span class='size-info'>C 22oz</span>", "t1": "Bylinný čaj Vitalita <span class='size-info'>H 16oz / C 16oz</span>", "t2": "Čaj maté s lopuchem <span class='size-info'>H 16oz / C 16oz</span>", "t3": "Čaj z černého rybízu <span class='size-info'>H 16oz / C 16oz</span>", "t4": "Jablečno-ibiškový čaj <span class='size-info'>H 16oz / C 16oz</span>", "d1": "Tiramisu <span class='size-info'>Korea Lovers Spolupráce</span>", "d2": "Baskický Tvarohový Koláč", "d3": "Brusinkový Tvarohový Chléb <span class='size-info'>s dipem</span>", "d4": "Vanilkový Selský Chléb <span class='size-info'>s dipem</span>", "d5": "Kávová Panna Cotta", "d6": "Karamelový Popcorn / Energetická tyčinka SOYJOY" },
+            descs: { "a1": "Jasná kyselost a květinové tóny, bohatý zážitek výběrové kávy.", "a2": "Typická směs CHUHAI, oříškové a kakaové tóny, dokonale vyvážené.", "a3": "Pomalé pražení při nízké teplotě, intenzivní kouřová chuť bez kyselosti.", "a4": "Profesionálně odstraněn kofein, zachovává původní aroma zrna.", "l1": "Vybraná směs propletená s hustou mléčnou pěnou, jemná a kulatá.", "l2": "Klasické sirupové aroma se skvěle hodí k latte.", "l3": "Vrstvená bohatá karamelová omáčka a mléčná pěna, sladká klasika.", "l4": "Vysoce čisté kakao se potkává s espressem pro plnou hořkosladkou chuť.", "l5": "Prémiové ovesné mléko, důraz na přírodní obilné aroma a plnost.", "l6": "Francouzská smetana, pravá vanilka, doladěné kapkou prémiového rumu.", "l7": "Tradiční chuť kondenzovaného mléka spojená s kávou, bohatá mléčná sladkost.", "l8": "Speciál s ostrovní atmosférou, kokosové mléko a káva se nečekaně hodí.", "l9": "Snížený podíl espressa pro lehčí, hladší mléčnou chuť.", "l10": "Bohatý ručně vařený hnědý cukr, aromatický a nepřeslazený.", "s1": "Bohaté kakao smíchané s mlékem, hutná chuť, bez kofeinu.", "s2": "Výluh z kávových slupek, bohatý na antioxidanty, čistý a sladký.", "s3": "Španělská bílá broskev a prémiový sirup v kombinaci s australským bílým broskvovým čajem pro jemné vrstvy.", "s4": "Přírodní ovocné tóny v kombinaci s jemnou perlivou vodou.", "r1": "Sladkokyselé čerstvé citrony spojené s kávou, letní osvěžení.", "r2": "Klasická sicilská chuť, dokonalý zlatý poměr citronu, cukru a kávy.", "r3": "Přidaná perlivá voda pro osvěžující a hluboký zážitek.", "t1": "Vybrané přírodní byliny, jemný funkční nápoj pro zvýšení energie.", "t2": "Zdravý mix jihoamerického maté a tchajwanského lopuchu.", "t3": "Bohaté aroma bobulí, jasná kyselost, povzbuzující a plné vitamínů.", "t4": "Jablečná vůně smíchaná s ibiškem, relaxační elegantní ovocný čaj.", "d1": "Exkluzivní spolupráce, autentické mascarpone s tóny vína a kávy.", "d2": "Povrch z pečeného karamelu, uvnitř vláčná polopečená sýrová textura.", "d3": "Pomalu kynutý chléb, plněný prémiovými brusinkami a smetanovým sýrem.", "d4": "Vyrobeno z přírodního koření, hutná textura s vůní pšenice.", "d5": "Jemná mléčná panna cotta s espressem a zábavnou kakaovou 'hlínou'.", "d6": "Křupavá karamelová poleva, nejlepší lehký snack ke kávě." },
             footer: { caf_t: "Obsah Kofeinu", caf1: "Nad 201mg/šálek", caf2: "101 - 200mg/šálek", caf3: "Pod 100mg/šálek", sta_t: "Stav Prodejny", sta_open: "Otevřeno", sta_off: "Zavřeno (Plánováno)", sta_close: "Zavřeno", sta_block: "<div class='opacity-60 font-medium whitespace-nowrap text-right'>Otevírací doba</div><div class='font-medium'>09:00 - 17:00</div><div class='opacity-60 font-medium whitespace-nowrap text-right'>Zavřeno</div><div class='font-medium'>Středa a Čtvrtek</div><div class='opacity-60 font-medium whitespace-nowrap text-center'>Tel</div><div class='font-medium'><a href='tel:04-25650817' class='hover:text-[#e67e22] transition-colors underline underline-offset-2'>04-25650817</a></div><div class='opacity-60 font-medium whitespace-nowrap text-center'>Adresa</div><div class='font-medium leading-relaxed'><a href='https://maps.app.goo.gl/Z381tu2iuHsGH85X9?g_st=ic' target='_blank' class='hover:text-[#e67e22] transition-colors underline underline-offset-2'>No. 17, Ln. 19, Sec. 3, Yahuan Rd., Taichung</a></div>", con_t: "Informace o Značce", con1: "CHUHAI, Designér chuti pro váš život<br>Quality Driven Coffee Roastery.", btn_line: "Oficiální LINE", btn_survey: "Zpětná vazba", btn_game: "Mini Hra", ai_t: "AI Designér Chuti", ai_sub: "Řekněte mi svou náladu, navrhnu vám jedinečnou chuť:", ai_p: "Např. Jsem trochu unavený, potřebuji energii...", ai_btn: "Navrhnout", nutri_btn: "Nutriční hodnoty", nutri_title: "Kalorie a Cukr", nutri_item: "Položka", nutri_cal: "Kalorie (kcal)", nutri_sugar: "Celkový cukr (g)", nutri_caf: "Kofein", nutri_note: "※ Hodnoty jsou odhady založené na standardních receptech.", caf_colors: { Červená: "Červená", Žlutá: "Žlutá", Zelená: "Zelená", none: "-" }, g_title: "CHUHAI Chytání ☕", g_desc: "Chytejte předměty, vyhněte se listí a projděte 5 úrovní!", g_score: "Skóre: ", g_start: "Začít", g_over: "Konec!", g_again: "Hrát znovu", g_missed: "Minuli jste!", g_msg_low: "Skoro! Dejte si kávu a odpočiňte si ☕", g_msg_mid: "Dobrá práce! Vaše káva se už připravuje ✨", g_msg_high: "Úžasné! Jste jako hlavní barista CHUHAI 🏆", g_total: "Celkové skóre", g_rank: "Pořadí", g_best: "Nejlepší", g_lvl: "Úroveň ", g_target: "Cíl: ", g_lvl_clear: "Úroveň dokončena!", g_next_lvl: "Další úroveň", g_all_clear: "Hotovo! Mistr 🏆", lvls: ["Sklizeň (Chyťte 10 zrn)", "Čas na Latte (Chyťte 15 kapek mléka)", "Třídění (Chyťte 20 věcí, pozor na listí)", "Zlatá horečka (Chyťte 15 věcí)", "Mistr (Rychlostní výzva, 30 věcí)"] }, tags: ["🚀 Doplnit energii", "🌿 Osvěžující", "☁️ Relax", "🍯 Sladkosti", "🍵 Bez kofeinu", "🔮 Kávové orákulum"]
         }
-    };
-
-    const engines = {
-        zh: {
-            openings: ["在橘色的海平面上升起之時，", "設計生活的味道，往往從一杯合適的咖啡開始。", "歡迎來到橘海，這裡的每一秒都為味覺而生。"],
-            mirrors: ["我感應到了您情緒中的細微起伏，", "針對您當下渴望沈澱的心情，", "為了完美回應您對這份時刻的期待，"],
-            insights: ["現在的您，需要強烈咖啡因來重啟系統。", "讓明亮的酸值洗去感官的雜訊。", "放慢步調，是為了品嚐更細膩的風味細節。"],
-            logics: ["這款產品能為您的時刻增添一份難得的層次，", "這份推薦是基於對『平衡』的極致追求，"],
-            products: {
-                refresh: ["『日式極深焙美式 ($95)』", "『元氣勁茶 ($130)』", "『莊園淺焙美式 ($95)』", "『日式輕拿鐵 ($120)』"],
-                breeze: ["『夏日檸檬冰咖啡 ($90)』", "『西西里咖啡 ($130)』", "『接骨木氣泡飲 ($110)』", "『白桃冰茶 ($160)』"],
-                relax: ["『瑪黛牛蒡茶 ($130)』", "『燕麥奶拿鐵 ($130)』", "『維也納拿鐵 ($130)』", "『低咖啡因美式 ($95)』"],
-                sweet: ["『韓國聯名提拉米蘇 ($200)』", "『焦糖瑪奇朵 ($140)』", "『摩卡拿鐵 ($140)』", "『黑糖拿鐵 ($140)』"],
-                warm: ["『香草拿鐵 ($135)』", "『熱煉乳拿鐵 ($130)』", "『芙香蘋果果茶 ($140)』"],
-                fortune: ["『韓國聯名提拉米蘇 ($200)』", "『西西里咖啡 ($130)』", "『巴斯克乳酪蛋糕 ($160)』", "『橘海拿鐵咖啡 ($120)』"]
-            },
-            upsellPrompts: [
-                "💡 **設計師建議**：強烈建議搭配限量聯名的『提拉米蘇 ($200)』，其馬斯卡彭的濃郁與咖啡香氣是極致的設計。",
-                "💡 **設計師建議**：搭配一份趣味的『咖啡吃土奶酪 ($49)』，能顯著提升整體的層次深度。",
-                "💡 **設計師建議**：別忘了加購『SOYJOY大豆營養棒 ($35)』，為當下的沈澱增添一份輕快健康的節奏。"
-            ],
-            closings: ["祝您在橘海找到生活的座標。", "期待與您在下一段風味中相遇。"]
-        },
-        en: { openings: ["Welcome to CHUHAI."], mirrors: ["Addressing your current mood,"], insights: ["Right now, you need a boost."], logics: ["This flavor resonates beautifully,"], products: { refresh: ["Japanese Dark Roast ($95)"], breeze: ["Sicily Coffee ($130)"], relax: ["Mate Burdock Tea ($130)"], sweet: ["Tiramisu ($200)"], warm: ["Vanilla Latte ($135)"], fortune: ["Tiramisu ($200)"] }, upsellPrompts: ["💡 Highly recommend pairing with 'Tiramisu ($200)'."], closings: ["Looking forward to meeting you in the next flavor."] },
-        ja: { openings: ["橘海へようこそ。"], mirrors: ["あなたの気分に合わせて、"], insights: ["少しリラックスしましょう。"], logics: ["これがおすすめです："], products: { refresh: ["極深煎りアメリカーノ ($95)"], breeze: ["シチリアコーヒー ($130)"], relax: ["マテ茶＆ごぼうティー ($130)"], sweet: ["ティラミス ($200)"], warm: ["バニララテ ($135)"], fortune: ["ティラミス ($200)"] }, upsellPrompts: ["💡 ティラミス($200)の追加をおすすめします。"], closings: ["素晴らしい一日を。"] },
-        ko: { openings: ["추하이에 오신 것을 환영합니다."], mirrors: ["당신의 기분에 맞춰,"], insights: ["조금 릴렉스 해보세요."], logics: ["이 메뉴를 추천합니다:"], products: { refresh: ["엑스트라 다크 아메리카노 ($95)"], breeze: ["시칠리아 커피 ($130)"], relax: ["마테 우엉차 ($130)"], sweet: ["티라미수 ($200)"], warm: ["바닐라 라떼 ($135)"], fortune: ["티라미수 ($200)"] }, upsellPrompts: ["💡 티라미수($200)를 함께 추천합니다."], closings: ["좋은 하루 되세요."] },
-        cs: { openings: ["Vítejte v CHUHAI."], mirrors: ["Pro vaši náladu,"], insights: ["Pojďme relaxovat."], logics: ["Doporučuji toto:"], products: { refresh: ["Extra tmavě pražené ($95)"], breeze: ["Sicilská káva ($130)"], relax: ["Čaj maté s lopuchem ($130)"], sweet: ["Tiramisu ($200)"], warm: ["Vanilkové Latte ($135)"], fortune: ["Tiramisu ($200)"] }, upsellPrompts: ["💡 Doporučuji přidat Tiramisu ($200)."], closings: ["Přeji krásný den."] }
     };
 
     let currentLang = 'zh';
@@ -387,67 +360,50 @@
         el('currentLangLabel').textContent = t.langName;
         el('langDropdown').classList.remove('show');
 
-        el('b-slogan').textContent = t.header.slogan;
-        el('t-ame').textContent = t.titles.ame;
-        el('t-lat').textContent = t.titles.lat;
-        el('t-spe').textContent = t.titles.spe;
-        el('t-roa').textContent = t.titles.roa;
-        el('t-des').textContent = t.titles.des;
-        el('t-tea').textContent = t.titles.tea;
+        const textUpdates = {
+            'b-slogan': t.header.slogan,
+            't-ame': t.titles.ame, 't-lat': t.titles.lat, 't-spe': t.titles.spe, 't-roa': t.titles.roa, 't-des': t.titles.des, 't-tea': t.titles.tea, 't-tea-note': t.titles.teaNote,
+            'f-caf-t': t.footer.caf_t, 'f-caf-1': t.footer.caf1, 'f-caf-2': t.footer.caf2, 'f-caf-3': t.footer.caf3,
+            'f-sta-t': t.footer.sta_t, 'f-con-t': t.footer.con_t,
+            'f-btn-line': t.footer.btn_line, 'f-btn-survey': t.footer.btn_survey, 'f-btn-game': t.footer.btn_game,
+            'g-modal-title': t.footer.g_title, 'g-modal-desc': t.footer.g_desc, 'g-btn-start': t.footer.g_start,
+            'g-txt-over': t.footer.g_over, 'g-btn-again': t.footer.g_again, 'g-txt-lvl-clear': t.footer.g_lvl_clear, 'g-btn-next-lvl': t.footer.g_next_lvl,
+            'btn-nutri': t.footer.nutri_btn, 'nutri-title': t.footer.nutri_title, 'nutri-th-item': t.footer.nutri_item,
+            'nutri-th-cal': t.footer.nutri_cal, 'nutri-th-sugar': t.footer.nutri_sugar, 'nutri-th-caf': t.footer.nutri_caf, 'nutri-note': t.footer.nutri_note,
+            'ai-title': t.footer.ai_t, 'ai-sub': t.footer.ai_sub, 'ai-btn': t.footer.ai_btn
+        };
+        for (let id in textUpdates) { if (el(id)) el(id).innerHTML = textUpdates[id]; }
 
-        for (let key in t.items) {
-            if (el(`n-${key}`)) {
+        el('f-sta-block').innerHTML = t.footer.sta_block;
+        el('f-con-1').innerHTML = t.footer.con1;
+        el('userMood').placeholder = t.footer.ai_p;
+        el('game-score-display').textContent = t.footer.g_score + (typeof gameScore !== 'undefined' ? gameScore : 0);
+        if(typeof currentLevel !== 'undefined') el('game-level-display').textContent = t.footer.g_lvl + currentLevel;
+
+        const svgTemplate = `<svg onclick="showItemImage('__KEY__')" class="inline-block w-4 h-4 ml-1.5 cursor-pointer text-[#8a7a6a] opacity-40 hover:opacity-100 hover:text-[#e67e22] transition-all transform hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="vertical-align: -0.125em;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>`;
+
+        Object.keys(t.items).forEach(key => {
+            const node = el(`n-${key}`);
+            if (node) {
                 let content = t.items[key];
-                const imgSvg = `<svg onclick="showItemImage('${key}')" class="inline-block w-4 h-4 ml-1.5 cursor-pointer text-[#8a7a6a] opacity-40 hover:opacity-100 hover:text-[#e67e22] transition-all transform hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="vertical-align: -0.125em;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>`;
-                if (content.includes("<span class='size-info'>")) {
-                    content = content.replace("<span class='size-info'>", imgSvg + " <span class='size-info'>");
-                } else if (content.includes("<span class='dot-")) {
-                    content = content.replace("<span class='dot-", imgSvg + " <span class='dot-");
+                const nutri = nutritionFacts[key];
+                
+                // 動態從營養庫取得該品項的咖啡因等級，並加入顏色點點
+                if (nutri && nutri.caf !== 'none') {
+                    content += ` <span class='dot-${nutri.caf} caffeine-dot'></span>`;
+                }
+
+                const imgSvg = svgTemplate.replace('__KEY__', key);
+                // 優化：用正則表達式一次性替換，避免冗長的 if-else 判斷，提升渲染效率
+                if (content.match(/(<span class='(?:size-info|dot-)[^>]*>)/)) {
+                    content = content.replace(/(<span class='(?:size-info|dot-)[^>]*>)/, imgSvg + " $1");
                 } else {
                     content += imgSvg;
                 }
-                el(`n-${key}`).innerHTML = content;
+                node.innerHTML = content;
             }
             if (el(`d-${key}`)) el(`d-${key}`).textContent = t.descs[key];
-        }
-
-        el('f-caf-t').textContent = t.footer.caf_t;
-        el('f-caf-1').textContent = t.footer.caf1;
-        el('f-caf-2').textContent = t.footer.caf2;
-        el('f-caf-3').textContent = t.footer.caf3;
-        el('f-sta-t').textContent = t.footer.sta_t;
-        el('f-sta-block').innerHTML = t.footer.sta_block;
-        el('f-con-t').textContent = t.footer.con_t;
-        el('f-con-1').innerHTML = t.footer.con1;
-        el('f-btn-line').textContent = t.footer.btn_line;
-        el('f-btn-survey').textContent = t.footer.btn_survey;
-        el('f-btn-game').textContent = t.footer.btn_game;
-        
-        el('g-modal-title').textContent = t.footer.g_title;
-        el('g-modal-desc').textContent = t.footer.g_desc;
-        el('g-btn-start').textContent = t.footer.g_start;
-        el('g-txt-over').textContent = t.footer.g_over;
-        el('g-btn-again').textContent = t.footer.g_again;
-        el('game-score-display').textContent = t.footer.g_score + (typeof gameScore !== 'undefined' ? gameScore : 0);
-        
-        el('g-txt-lvl-clear').textContent = t.footer.g_lvl_clear;
-        el('g-btn-next-lvl').textContent = t.footer.g_next_lvl;
-        if(typeof currentLevel !== 'undefined') {
-            el('game-level-display').textContent = t.footer.g_lvl + currentLevel;
-        }
-
-        el('btn-nutri').textContent = t.footer.nutri_btn;
-        el('nutri-title').textContent = t.footer.nutri_title;
-        el('nutri-th-item').textContent = t.footer.nutri_item;
-        el('nutri-th-cal').textContent = t.footer.nutri_cal;
-        el('nutri-th-sugar').textContent = t.footer.nutri_sugar;
-        el('nutri-th-caf').textContent = t.footer.nutri_caf;
-        el('nutri-note').textContent = t.footer.nutri_note;
-
-        el('ai-title').textContent = t.footer.ai_t;
-        el('ai-sub').textContent = t.footer.ai_sub;
-        el('userMood').placeholder = t.footer.ai_p;
-        el('ai-btn').textContent = t.footer.ai_btn;
+        });
 
         const tagsContainer = el('mood-tags-container');
         tagsContainer.innerHTML = '';
@@ -459,16 +415,16 @@
             tagsContainer.appendChild(span);
         });
 
-        let tbodyHtml = "";
+        let rows = [];
         for (let key in nutritionFacts) {
             if(t.items[key]) {
                 let cleanName = t.items[key].split('<span')[0].trim(); 
                 let cafKey = nutritionFacts[key].caf;
                 let cafHtml = cafKey === 'none' ? t.footer.caf_colors.none : `<span class="dot-${cafKey} caffeine-dot" style="margin-left:0;"></span>`;
-                tbodyHtml += `<tr><td>${cleanName}</td><td>${nutritionFacts[key].cal}</td><td>${nutritionFacts[key].sugar}</td><td>${cafHtml}</td></tr>`;
+                rows.push(`<tr><td>${cleanName}</td><td>${nutritionFacts[key].cal}</td><td>${nutritionFacts[key].sugar}</td><td>${cafHtml}</td></tr>`);
             }
         }
-        el('nutri-tbody').innerHTML = tbodyHtml;
+        el('nutri-tbody').innerHTML = rows.join('');
 
         updateOpeningStatus();
     }
@@ -496,14 +452,22 @@
     let gameInterval, dropInterval, gameTime = 30, gameScore = 0, isGamePlaying = false;
     let currentLevel = 1, currentProgress = 0;
     let gameFrameId;
+    let activeItems = [];
+    let gameCleared = false;
 
+    // --- 遊戲邏輯優化：更合理的節奏、容錯率與符合文字說明的掉落機率 ---
     function getLevelConfig(lvl) {
         const configs = [
-            { time: 20, target: 10, speedMul: 1, dropMs: 500, probs: { bean: 1, milk: 0, bad: 0, gold: 0 } }, 
-            { time: 20, target: 15, speedMul: 1.2, dropMs: 450, probs: { bean: 0.2, milk: 0.8, bad: 0, gold: 0 } }, 
-            { time: 25, target: 20, speedMul: 1.4, dropMs: 400, probs: { bean: 0.4, milk: 0.4, bad: 0.2, gold: 0 } }, 
-            { time: 25, target: 15, speedMul: 1.6, dropMs: 350, probs: { bean: 0.3, milk: 0.3, bad: 0.2, gold: 0.2 } }, 
-            { time: 30, target: 30, speedMul: 2.2, dropMs: 250, probs: { bean: 0.3, milk: 0.3, bad: 0.3, gold: 0.1 } }  
+            // Level 1: 純咖啡豆，無干擾，速度慢
+            { time: 25, target: 10, speedMul: 0.8, dropMs: 900, probs: { bean: 1, milk: 0, bad: 0, gold: 0 } }, 
+            // Level 2: 純牛奶，無干擾，速度微升
+            { time: 25, target: 15, speedMul: 0.9, dropMs: 800, probs: { bean: 0, milk: 1, bad: 0, gold: 0 } }, 
+            // Level 3: 加入枯葉考驗，時間充裕
+            { time: 30, target: 20, speedMul: 1.1, dropMs: 750, probs: { bean: 0.5, milk: 0.3, bad: 0.2, gold: 0 } }, 
+            // Level 4: 黃金狂熱，小心較快的金豆與枯葉
+            { time: 35, target: 15, speedMul: 1.3, dropMs: 700, probs: { bean: 0.3, milk: 0.2, bad: 0.3, gold: 0.2 } }, 
+            // Level 5: 橘海大師，極速挑戰但時間更寬裕
+            { time: 40, target: 30, speedMul: 1.5, dropMs: 600, probs: { bean: 0.3, milk: 0.3, bad: 0.2, gold: 0.2 } }  
         ];
         return configs[lvl - 1];
     }
@@ -525,6 +489,7 @@
         el('game-result-screen').style.display = 'none';
         el('game-levelup-screen').style.display = 'none';
         document.querySelectorAll('.game-item').forEach(e => e.remove());
+        activeItems = [];
         const player = el('game-player');
         if (player) player.style.left = '50%';
         const t = i18n[currentLang].footer;
@@ -561,7 +526,16 @@
     function startGame() {
         gameScore = 0;
         currentLevel = 1;
+        gameCleared = false;
         startLevel();
+    }
+
+    function playAgain() {
+        if (gameCleared) {
+            startGame(); // 若已全部通關，從第一關重新開始
+        } else {
+            startLevel(); // 若是失敗，從當前關卡重新挑戰
+        }
     }
 
     function startLevel() {
@@ -569,6 +543,7 @@
         el('game-result-screen').style.display = 'none';
         el('game-levelup-screen').style.display = 'none';
         document.querySelectorAll('.game-item').forEach(e => e.remove());
+        activeItems = [];
         
         const config = getLevelConfig(currentLevel);
         gameTime = config.time;
@@ -612,13 +587,16 @@
         if(type === 'bad') speed *= 1.2;
         
         item.innerText = symbol;
-        item.dataset.type = type;
-        item.dataset.speed = speed;
         
-        const rect = gameArea.getBoundingClientRect();
-        item.style.left = Math.max(15, Math.random() * (rect.width - 40)) + 'px';
-        item.style.top = '-30px';
+        const rectWidth = gameArea.clientWidth; 
+        const xPos = Math.max(15, Math.random() * (rectWidth - 40));
+        const yPos = -30;
+        
+        item.style.left = xPos + 'px';
+        item.style.top = yPos + 'px';
         gameArea.appendChild(item);
+
+        activeItems.push({ el: item, speed: speed, type: type, y: yPos });
     }
 
     function updateGame() {
@@ -626,34 +604,43 @@
         const config = getLevelConfig(currentLevel);
         const gameArea = el('game-area');
         const player = el('game-player');
-        const items = document.querySelectorAll('.game-item');
+        
         const playerRect = player.getBoundingClientRect();
         const areaRect = gameArea.getBoundingClientRect();
         const t = i18n[currentLang].footer;
         
-        items.forEach(item => {
-            let top = parseFloat(item.style.top);
-            top += parseFloat(item.dataset.speed);
-            item.style.top = top + 'px';
+        let scoreChanged = false;
+        let progressChanged = false;
+        
+        for (let i = activeItems.length - 1; i >= 0; i--) {
+            let obj = activeItems[i];
+            let itemNode = obj.el;
+            
+            obj.y += obj.speed;
+            itemNode.style.top = obj.y + 'px';
 
-            const itemRect = item.getBoundingClientRect();
+            const itemRect = itemNode.getBoundingClientRect();
+            
+            // 碰撞偵測優化：擴大橫向判定範圍 (左右各增加 20px)，讓觸控遊玩更平易近人
             if (
-                itemRect.bottom >= playerRect.top + 10 &&
+                itemRect.bottom >= playerRect.top + 5 &&
                 itemRect.top <= playerRect.bottom &&
-                itemRect.right >= playerRect.left + 10 &&
-                itemRect.left <= playerRect.right - 10
+                itemRect.right >= playerRect.left - 20 &&
+                itemRect.left <= playerRect.right + 20
             ) {
-                item.remove();
+                itemNode.remove();
+                activeItems.splice(i, 1);
                 
                 let points = 10;
-                if (item.dataset.type === 'gold') points = 50;
-                else if (item.dataset.type === 'milk') points = 30;
-                else if (item.dataset.type === 'bad') points = -10;
+                if (obj.type === 'gold') points = 50;
+                else if (obj.type === 'milk') points = 30;
+                else if (obj.type === 'bad') points = -10;
                 
                 gameScore += points;
                 if (gameScore < 0) gameScore = 0; 
+                scoreChanged = true;
                 
-                if(item.dataset.type === 'bad') {
+                if(obj.type === 'bad') {
                     currentProgress = Math.max(0, currentProgress - 1);
                     player.style.transform = "translateX(-50%) rotate(15deg)";
                     setTimeout(() => player.style.transform = "translateX(-50%) rotate(0deg)", 150);
@@ -662,21 +649,27 @@
                     player.style.transform = "translateX(-50%) scale(1.2)";
                     setTimeout(() => player.style.transform = "translateX(-50%) scale(1)", 100);
                 }
+                progressChanged = true;
 
-                el('game-score-display').innerText = t.g_score + gameScore;
-                el('game-progress-display').innerText = t.g_target + `${currentProgress} / ${config.target}`;
-                
                 if (currentProgress >= config.target) {
+                    if (scoreChanged) el('game-score-display').innerText = t.g_score + gameScore;
+                    if (progressChanged) el('game-progress-display').innerText = t.g_target + `${currentProgress} / ${config.target}`;
                     levelComplete();
+                    return; 
                 }
             } else if (itemRect.top > areaRect.bottom) {
-                let type = item.dataset.type;
-                item.remove();
+                let type = obj.type;
+                itemNode.remove();
+                activeItems.splice(i, 1);
                 if (type !== 'bad') {
                     endGame(true, false, 'miss');
+                    return; 
                 }
             }
-        });
+        }
+        
+        if (scoreChanged) el('game-score-display').innerText = t.g_score + gameScore;
+        if (progressChanged) el('game-progress-display').innerText = t.g_target + `${currentProgress} / ${config.target}`;
         
         if(isGamePlaying) {
             gameFrameId = requestAnimationFrame(updateGame);
@@ -701,6 +694,7 @@
 
     function endGame(showResult, isClear = false, reason = 'time') {
         isGamePlaying = false;
+        gameCleared = isClear;
         clearInterval(gameInterval);
         clearInterval(dropInterval);
         cancelAnimationFrame(gameFrameId);
@@ -770,7 +764,6 @@
         const payload = { contents: [{ parts: [{ text: prompt }] }], systemInstruction: { parts: [{ text: sysPrompt }] } };
 
         try {
-            // 使用 Promise.race 確保絕對的 3 秒超時控制
             const fetchPromise = fetch(url, { 
                 method: 'POST', 
                 headers: { 'Content-Type': 'application/json' }, 
@@ -784,13 +777,10 @@
                 throw new Error("Invalid");
             });
 
-            // 建立 3 秒強制倒數計時器
             const timeoutPromise = new Promise((_, reject) => setTimeout(() => reject(new Error("Timeout")), 3000));
 
-            // 當超過 3 秒時，會自動拋出錯誤並進入下方的 catch 區塊
             return await Promise.race([fetchPromise, timeoutPromise]);
         } catch (e) {
-            // 連線失敗或超時，直接回傳優雅的內建文本 (已移除 System Note)
             return generateUltraMarketingScript(prompt, type);
         }
     }
@@ -828,3 +818,5 @@
         setInterval(updateOpeningStatus, 60000); 
     }
 </script>
+</body>
+</html>
