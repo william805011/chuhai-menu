@@ -414,7 +414,11 @@
         el('game-score-display').textContent = t.footer.g_score + (typeof gameScore !== 'undefined' ? gameScore : 0);
         if(typeof currentLevel !== 'undefined') el('game-level-display').textContent = t.footer.g_lvl + currentLevel;
 
-        const svgTemplate = `<svg onclick="showItemImage('__KEY__')" class="inline-block w-4 h-4 ml-1.5 cursor-pointer text-[#8a7a6a] opacity-40 hover:opacity-100 hover:text-[#e67e22] transition-all transform hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="vertical-align: -0.125em;"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>`;
+        // 升級：智慧感測縮圖模板，有照片顯示縮圖，無照片則退回原本的相機 icon
+        const svgTemplate = `<span onclick="showItemImage('__KEY__')" class="inline-flex items-center justify-center ml-1.5 cursor-pointer transition-all transform hover:scale-110" style="vertical-align: -0.125em;">
+            <img src="./images/__KEY__.png" class="w-5 h-5 object-cover rounded-[4px] shadow-sm border border-[#e67e22]/40 hidden hover:border-[#e67e22] hover:shadow-md" onload="this.classList.remove('hidden'); this.nextElementSibling.classList.add('hidden');" onerror="this.remove();" alt="">
+            <svg class="w-4 h-4 text-[#8a7a6a] opacity-40 hover:opacity-100 hover:text-[#e67e22]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+        </span>`;
 
         Object.keys(t.items).forEach(key => {
             const node = el(`n-${key}`);
@@ -427,7 +431,9 @@
                     content += ` <span class='dot-${nutri.caf} caffeine-dot'></span>`;
                 }
 
-                const imgSvg = svgTemplate.replace('__KEY__', key);
+                // 取代 __KEY__ 來載入對應的縮圖與觸發函式
+                const imgSvg = svgTemplate.replace(/__KEY__/g, key);
+                
                 // 優化：用正則表達式一次性替換，避免冗長的 if-else 判斷，提升渲染效率
                 if (content.match(/(<span class='(?:size-info|dot-)[^>]*>)/)) {
                     content = content.replace(/(<span class='(?:size-info|dot-)[^>]*>)/, imgSvg + " $1");
